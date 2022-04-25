@@ -1,6 +1,6 @@
 # [[CLC]] 反射率量測
 #INX 
-![[image (1).png]]
+![[CLC反射率量測.png]]
 ref: 秉均
 
 Y value

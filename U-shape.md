@@ -1,0 +1,1 @@
+1. test cell 高溫 U-shape 是烘箱式
