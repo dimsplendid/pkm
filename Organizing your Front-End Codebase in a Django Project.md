@@ -2,7 +2,7 @@
 aliases: 
 tags: python, django, javascript, web
 date created: Wednesday, April 27th 2022, 9:33:44 am
-date modified: Wednesday, April 27th 2022, 9:37:49 am
+date modified: Wednesday, April 27th 2022, 10:38:51 am
 title: Organizing Your Front-End Codebase in a Django Project
 ---
 
@@ -15,4 +15,4 @@ title: Organizing Your Front-End Codebase in a Django Project
 
 1. Server-First: Easy to make a spaghetti monster.
 2. Client-First
-3. 
+3.
