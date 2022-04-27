@@ -2,7 +2,7 @@
 aliases: 
 tags: organize
 date created: Wednesday, April 27th 2022, 11:57:25 am
-date modified: Wednesday, April 27th 2022, 12:22:35 pm
+date modified: Wednesday, April 27th 2022, 1:17:46 pm
 title: Speed up Getting Through the Inbox
 ---
 
@@ -23,4 +23,27 @@ But when you get more and more emails, you should waste time thinking and orderi
 
 > [!Question]
 > How to add customized shortcuts?
+
+## 3. Process Your Inbox Once or Twice per Day
+
+Set aside specific time for email.
+
+>[!info]
+> For me, 1~2 hours are good enough.
+
+## 4. Archive Your Backlog
+
+Archive everything older than your use-by date.
+
+>[!dict]
+> use-by date: 有效期限
+
+## 5. Don't Mark as Unread, Archive Instead
+
+Archive emails when done, and see your inbox itself as things to do.
+
+## 6. Automate triage
+
+>[!Dict]
+> triage: 按嚴重度分類
 
