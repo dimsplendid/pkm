@@ -2,13 +2,11 @@
 aliases: 
 tags: organize
 date created: Wednesday, April 27th 2022, 11:57:25 am
-date modified: Wednesday, April 27th 2022, 4:57:44 pm
+date modified: Wednesday, April 27th 2022, 10:35:09 pm
 title: Speed up Getting Through the Inbox
 ---
 
 # Speed up Getting Through the Inbox
-
-[9 ways to get through your inbox twice as fast (superhuman.com)](https://blog.superhuman.com/9-ways-to-get-through-your-inbox-twice-as-fast/?utm_source=blog&utm_medium=seo_int&utm_campaign=izmethod)
 
 The tips to get through emails fast when using [[Inbox Zero]] Method.
 
@@ -40,7 +38,7 @@ Set aside specific time for email.
 
 Archive everything older than your use-by date.
 
->[!dict]
+>[!Hint] Dictionary
 > use-by date: 有效期限
 
 ## 5. Don't Mark as Unread, Archive Instead
@@ -49,7 +47,7 @@ Archive emails when done, and see your inbox itself as things to do.
 
 ## 6. Automate Triage
 
->[!Dict]
+>[!Hint] Dictionary
 > triage: 按嚴重度分類
 
 Group emails by type. If you reply to emails in the order they appear, your brain constantly changes gears. You flick back and forth between projects, alternate between brief acknowledgements and in-depth replies, and flip from updating your team to replying to mom.
@@ -66,7 +64,7 @@ This is task-switching and it costs you valuable time.
 
 You're sending crucial email: closing deals, meeting deadlines, or landing meetings.
 
-> [!Dict]
+> [!Hint] Dictionary
 > land a meeting: 召開會議
 > (用法查的到，但字典怎麼都查不到)
 
@@ -86,6 +84,18 @@ Think about the most common requests you get via email.
 Are they pitches, introductions, or messages from recruiters? What are the phrases you find yourself typing again and again? Capture this wording to use an reuse.
 
 > [!Info]
-> 公司的信箱有`信箋範本` 這個功能，基本上就是模板的意思。
+> 公司的信箱有 **信箋範本** 這個功能，基本上就是模板的意思。
 
-Replying with pre-written templates
+It takes time to craft emails that strike the right tone, and that's where templates come in. Create a template once, then use it hundreds of times. Even when you're pressed for time, you can summon the perfect words --- informative, thoughtful, and typo-free.
+
+## 9. Schedule Your Messages
+
+Send hundreds of emails, and you'll get hundreds of emails in return. Your inbox like the mythical Hydra: chop one head off, and several sprout in its place!
+> I like this sentence www.
+
+Unless the recipient is urgently waiting, schedule your send:
+
+Time delivery to suit the recipient's work hours or time zone. If their notifications are on, you'll spare them out-of-hours interruptions. And most importantly, **you won't get an instant reply that tempts you back into a thread!**
+
+> [!cite]
+> [9 ways to get through your inbox twice as fast (superhuman.com)](https://blog.superhuman.com/9-ways-to-get-through-your-inbox-twice-as-fast/?utm_source=blog&utm_medium=seo_int&utm_campaign=izmethod)

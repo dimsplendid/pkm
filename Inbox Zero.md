@@ -29,8 +29,5 @@ One of the goals of using Inbox Zero Method was to stop using email as a to-do l
 > [!Question]
 > How about tracking the message? If I delete all of them, it just became hard to tracking the issue, isn't it?
 
-
-
-## ref
-
-1. [Inbox Zero and the Inbox Zero Method — everything you need to know (superhuman.com)](https://blog.superhuman.com/inbox-zero-method/)
+> [!Cite]
+>  [Inbox Zero and the Inbox Zero Method — everything you need to know (superhuman.com)](https://blog.superhuman.com/inbox-zero-method/)
