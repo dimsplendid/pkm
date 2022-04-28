@@ -16,11 +16,12 @@ title: Organizing Your Front-End Codebase in a Django Project
 1. Server-First: 
 	Easy to make a spaghetti monster. Hard to maintain and reuse code. Conflict the philosophy  DRY.
 2. Client-First: 
-	Determine the front-end framework first. And backend is a completely separate, standalone Django project where Django is mostly just an API into the database. But on the other hand, throw out Django's front-end goodies.(templates, forms, ...)
+	Determine the front-end framework first. And backend is a completely separate, standalone Django project where Django is mostly just an API into the database. But on the other hand, throw out Django's front-end goodies.(templates, forms, …)
 3. Hybrid: choose the server-first and client-first at **page level**
 
 > [!Info] Resources
-> [[Secrets of the JavaScript Ninja, 2nd Edition.pdf]]
+> 1. [Organizing your Front-End Codebase in a Django Project (saaspegasus.com)](https://www.saaspegasus.com/guides/modern-javascript-for-django-developers/client-server-architectures/)
+> 2. [[Secrets of the JavaScript Ninja, 2nd Edition.pdf]]
 
 > [!Warning] Warning: Stay Away From W3School
 > One problem about JavaScript (and CSS) research on the web is that W3Schools will turn up at the top of search engine results. This is unfortunate, because much of the data there is outdated enough to be incorrect. Be smart and avoid this resource.
