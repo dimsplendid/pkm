@@ -14,6 +14,6 @@ title: Organizing Your Front-End Codebase in a Django Project
 ## The Two Common Approaches of Integrating Django and JavaScript
 
 1. Server-First: Easy to make a spaghetti monster.
-2. Client-First: Determine the front-end framework first. And backend is a completely separate, standalone Django project where Django 
+2. Client-First: Determine the front-end framework first. And backend is a completely separate, standalone Django project where Django is mostly just an API into the database
 
 
