@@ -14,3 +14,9 @@ title: javascript
 > Though, the authors recommend the book:
 >  [[Secrets of the JavaScript Ninja, 2nd Edition.pdf]]
 
+>[!Info] Dictionary
+> plethora
+> /ˈplɛθ(ə)rə/
+> - noun
+> 	1. 過多
+> 	2. 多血症
