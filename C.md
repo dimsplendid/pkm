@@ -25,8 +25,26 @@ I have read Learn C in the hard way, but it's not enough, I'm curious what's the
 5. Review the naming conventions.
 6. OO and design pattern implementation?
 7. Build a full-stack web server using C
+	> See how jserv do.
 
 > [!Info]
 > Try dataview to print the list from the [[C kanban|kanban]]?
 
+> [!Hint] Dictionary
+> acquaintance:  
+> _noun_  
+> 1. knowledge or experience of something
+> 2. a person one knows slightly, but who is not a close friend  
+> 
+> cognition:  
+> _noun_  
+> - the mental action or process of acquiring knowledge and understanding through thought, experience, and the senses.
 
+## Modern C
+
+This book split the topic from level 0 to 3.
+
+0. [[C - Level 0|Level 0]]
+1. [[C - Level 1|Level 1]]
+2. [[C - Level 2|Level 2]]
+3. [[C - Level 3|Level 3]]

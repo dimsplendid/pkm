@@ -9,3 +9,7 @@ title: Using SSH in VSCode
 
 If the host is set up, it's pretty easy.
 [Developing on Remote Machines using SSH and Visual Studio Code](https://code.visualstudio.com/docs/remote/ssh)
+
+Need install the extension to the host.
+
+Keep in mind the input method should be `ENG`

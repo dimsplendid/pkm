@@ -15,7 +15,7 @@ title: JavaScript
 > Though, the authors recommend the book:
 >  [[Secrets of the JavaScript Ninja, 2nd Edition.pdf]]
 
->[!Info] Dictionary
+>[!Hint] Dictionary
 > plethora
 > /ˈplɛθ(ə)rə/
 > - noun
