@@ -13,11 +13,13 @@ I have read Learn C in the hard way, but it's not enough, I'm curious what's the
 1. Software package manager? There are `pip` in python, `npm` in JS, `gem` in Ruby, what about C?
 	> [Welcome to Conan C/C++ Package Manager Documentation — conan 1.47.0 documentation](https://docs.conan.io/en/latest/)
 2. What about virtual environment?
+
 > [!Note]
 > 1. C is not like python, most feature has backward compatibility. So the environment is more reliable, but I think we can always make a docker. Let me see later.
 
 > [!Info]
 > I would re-learn follow the book, [[Modern C (Jens Gustedt) (z-lib.org).pdf|Modern C]], in C17 standard.
+
 3. What about deploy? I know it's simple to compile and execute, but how to solve environment and platform problem?
 4. What's the best coding layout?
 5. Review the naming conventions.
