@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: 
+tags: game
 date created: Saturday, April 30th 2022, 2:24:41 pm
 date modified: Saturday, April 30th 2022, 2:24:41 pm
 title: We are here together
