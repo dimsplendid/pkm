@@ -15,7 +15,7 @@ I have read Learn C in the hard way, but it's not enough, I'm curious what's the
 2. What about virtual environment?
 
 > [!Note]
-> 1. C is not like python, most feature has backward compatibility. So the environment is more reliable, but I think we can always make a docker. Let me see later.
+> 1. C is not like python, most feature has backward compatibility. So the environment is more reliable, but I think we can always make a docker[^1]. Let me see later.
 
 > [!Info]
 > I would re-learn follow the book, [[Modern C (Jens Gustedt) (z-lib.org).pdf|Modern C]], in C17 standard.
@@ -48,3 +48,6 @@ This book split the topic from level 0 to 3.
 1. [[C - Level 1|Level 1]]
 2. [[C - Level 2|Level 2]]
 3. [[C - Level 3|Level 3]]
+
+## Ref
+[^1]:[skeeto/w64devkit: Portable C and C++ Development Kit for x64 (and x86) Windows (github.com)](https://github.com/skeeto/w64devkit)
