@@ -1,0 +1,65 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{chemmacros}
+\chemsetup{
+    modules = all,
+}
+\usepackage{chemfig}
+\setchemfig{%
+    % scheme debug=true,% set to false in your document
+    fixed length=true,
+    atom sep=2em,
+}
+\newcommand{\bndlen}{2.0em}
+\newcommand{\lnwidth}{0.7pt}
+
+\usepackage[version=4]{mhchem}
+
+\title{Why \ce{N2O} is not symmetry}
+\author{dimsplendid }
+\date{April 2022}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\subsection{\ce{N2O} resonance structure}
+
+\schemestart
+    \chemleft{[}
+    \subscheme{
+    % \setcharge{debug}
+        \chemfig{
+            @{n1}\charge{[circle]180=\:}{N}~[@{tb}]\chemabove{N}{\scriptstyle\oplus}-[@{sb}]@{o1}\charge{[circle]0=\:,90=\:, 270=\:, 45[circle,anchor=180+\chargeangle]=$\scriptstyle\ominus$}{O}
+        }
+        \arrow{<->}
+        \chemfig{
+            \charge{[circle]180=\:, 270=\:,90=$\scriptstyle\ominus$}{N}=\chemabove{N}{\scriptstyle\oplus}=\charge{[circle]0=\:,-90=\:}{O}
+        }
+    }
+    \chemright{]}
+\schemestop
+\chemmove[red, -stealth, shorten <=3pt]{
+    \draw(tb).. controls +(-90:.4cm) and +(-75:4mm).. (n1);
+    \draw(o1).. controls +(120:.4cm) and +(90:4mm).. (sb);
+}
+\\
+\\
+\\
+\schemestart
+    \chemleft{[}
+    \subscheme{
+    % \setcharge{debug}
+        \chemfig{
+            \charge{[circle]180=\:,-90=\:,90=$\scriptstyle\ominus$}{N}=\chemabove{O}{2\scriptstyle\oplus}=\charge{[circle]0=\:,-90=\:,90=$\scriptstyle\ominus$}{N}
+        }
+    }
+    \chemright{]}
+\schemestop
+\end{document}
