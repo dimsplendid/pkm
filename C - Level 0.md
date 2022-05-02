@@ -36,3 +36,16 @@ title: C - Level 0
 > relating to the words or vocabulary of a language
 
 
+### Scopes
+1. block scope
+2. file scope: Identifiers in file scope are often referred to as _globals_.
+
+### Definitions
+
+> [!Hint] **TAKEAWAY 2.5**  
+> *Declarations specify **identifiers**, whereas definitions specify **objects**.*
+
+In contrast to **object** or **function** declarations, where several are allowed for the same identifier, definitions of **objects** or **functions** must be unique.
+
+### Statement
+

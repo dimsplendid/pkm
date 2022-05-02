@@ -49,5 +49,9 @@ This book split the topic from level 0 to 3.
 2. [[C - Level 2|Level 2]]
 3. [[C - Level 3|Level 3]]
 
+> [!Quote]  
+> Jerve: 從第一手資料學習：大文豪寫作都不免要查字典，庸俗的軟體開發者如我們，難道不需要翻閱語言規格書嗎？難道不需要搞懂術語定義和規範嗎？[^2]
+
 ## Ref
 [^1]:[skeeto/w64devkit: Portable C and C++ Development Kit for x64 (and x86) Windows (github.com)](https://github.com/skeeto/w64devkit)
+[^2]:[你所不知道的 C 語言: 開發工具和規格標準 - HackMD](https://hackmd.io/@sysprog/c-standards#%E8%AE%80%E8%A6%8F%E6%A0%BC%E6%9B%B8%E5%8F%AF%E5%A4%A7%E5%B9%85%E7%9C%81%E5%8E%BB%E8%87%86%E6%B8%AC)
