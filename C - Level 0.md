@@ -26,7 +26,7 @@ title: C - Level 0
 
 ## The Principal Structure of a Program
 
-> [!Tip] Dictionary
+> [!Hint] Dictionary
 > **semantic**  
 > *adjective*  
 > relating to meaning in language or logic

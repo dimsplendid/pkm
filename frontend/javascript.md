@@ -16,8 +16,13 @@ title: JavaScript
 >  [[Secrets of the JavaScript Ninja, 2nd Edition.pdf]]
 
 >[!Hint] Dictionary
-> plethora
+> **plethora**
 > /ˈplɛθ(ə)rə/
-> - noun
-> 	1. 過多
-> 	2. 多血症
+> _noun_
+> a large or excessive amount of something
+> 
+> **formidable**
+> _adjective_
+> inspiring fear or respect through being impressively large, powerful, intense, or capable
+
+
