@@ -2,11 +2,12 @@
 aliases: 
 tags: C learn modern-c 
 date created: Monday, May 2nd 2022, 10:25:24 am
-date modified: Monday, May 2nd 2022, 11:22:27 am
+date modified: Monday, May 2nd 2022, 4:40:44 pm
 title: C - Level 1
 ---
 
 # C - Level 1
+
 prev: [[C - Level 0]]
 > [!Hint] Dictionary
 > **buckle up**
@@ -37,6 +38,12 @@ prev: [[C - Level 0]]
 
 ## Everything is About Control
 
-> [!Hint] **TAKEAWAY 3.3**  
+## Conditional Execution
+
+> [!Hint] **TAKEAWAY 3.3**
 > _Don't compare to 0,_ `false`_, or_ `true`.
+
+## Iterations
+
+## Multiple Selection
 
