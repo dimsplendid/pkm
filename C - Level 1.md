@@ -7,7 +7,7 @@ title: C - Level 1
 ---
 
 # C - Level 1
-
+prev: [[C - Level 0]]
 > [!Hint] Dictionary
 > **buckle up**
 > _phrasal verb of buckle_
@@ -36,4 +36,7 @@ title: C - Level 1
 	```
 
 ## Everything is About Control
+
+> [!Hint] **TAKEAWAY 3.3**  
+> _Don't compare to 0,_ `false`_, or_ `true`.
 
