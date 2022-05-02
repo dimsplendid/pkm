@@ -24,5 +24,9 @@ title: JavaScript
 > **formidable**
 > _adjective_
 > inspiring fear or respect through being impressively large, powerful, intense, or capable
+> 
+> **apprentice**
+> _noun_
+> a person who is learning a trade from a skilled employer, having agreed to work for a fixed period at low wages.
 
 
