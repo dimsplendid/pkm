@@ -2,7 +2,7 @@
 aliases: 
 tags: C learn modern-c 
 date created: Monday, May 2nd 2022, 10:25:24 am
-date modified: Monday, May 2nd 2022, 4:40:44 pm
+date modified: Monday, May 2nd 2022, 6:02:50 pm
 title: C - Level 1
 ---
 
@@ -38,12 +38,14 @@ prev: [[C - Level 0]]
 
 ## Everything is About Control
 
-## Conditional Execution
+### Conditional Execution
 
 > [!Hint] **TAKEAWAY 3.3**
 > _Don't compare to 0,_ `false`_, or_ `true`.
 
-## Iterations
+### Iterations
 
-## Multiple Selection
+### Multiple Selection
+
+## Expressing Computations
 
