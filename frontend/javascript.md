@@ -28,5 +28,21 @@ title: JavaScript
 > **apprentice**
 > _noun_
 > a person who is learning a trade from a skilled employer, having agreed to work for a fixed period at low wages.
+> 
+> **nitty-gritty**
+> _noun_ `INFORMAL`
+> the most important aspects or practical details of a subject or situation
+> 
+> **foray**
+> _noun_
+> a sudden attack or incursion into enemy territory, especially to obtain something; a raid
+> _verb_
+> make or go on a foray
+
+- [[JS Part 1|Part 1: Introduction]]
+- [[JS Part 2|Part 2: Functions]]
+- [[JS Part 3|Part 3: Objects]]
+- 
+
 
 
