@@ -39,10 +39,10 @@ title: JavaScript
 > _verb_
 > make or go on a foray
 
-- [[JS Part 1|Part 1: Introduction]]
-- [[JS Part 2|Part 2: Functions]]
-- [[JS Part 3|Part 3: Objects]]
-- 
+1. [[JS Part 1 Warning Up|Warning up]]
+2. [[JS Part 2|Functions]]
+3. [[JS Part 3|Objects]]
+4. [[JS Part 4|Interacting with webs]]
 
 
 
