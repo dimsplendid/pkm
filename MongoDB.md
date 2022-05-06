@@ -1,6 +1,9 @@
 ---
-date updated: '2021-08-14T13:39:03+08:00'
-
+aliases: 
+tags: web database
+date created: Saturday, August 14th 2021, 1:25:49 pm
+date modified: Sunday, August 15th 2021, 10:10:53 pm
+title: MongoDB
 ---
 
 # MongoDB
