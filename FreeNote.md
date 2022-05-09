@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: note development
+tags: note development side-project 
 date created: Thursday, May 5th 2022, 11:30:27 pm
 date modified: Thursday, May 5th 2022, 11:30:27 pm
 title: FreeNote
@@ -18,3 +18,8 @@ Objective:
 5. GitHub mkdoc integrate
 6. Copy from hackmd
 7. REPL JS & Python Integrate?
+
+> [!Note]
+> Sound like I can build a obsidian plugin first?
+> compile obsidian note to html and upload to github like mkdoc?
+> [[obsidian-github-page]]
