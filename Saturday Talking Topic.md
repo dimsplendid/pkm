@@ -8,9 +8,6 @@ title: Talking Topic
 
 # Saturday Talking Topic
 
-1. pyscript
-2. webassembly
-3. 快篩試劑
 4. 雙語國家
 5. 無合成分裂
 6. 硬體 bug eg: 放射性元素
