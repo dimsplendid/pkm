@@ -14,7 +14,7 @@ title: Git
 git pull
 ```
 
-2. upload code to repository
+2. upload committed code to repository
 
 ```bash
 git push
