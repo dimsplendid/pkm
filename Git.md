@@ -35,3 +35,12 @@ git log
 git log --oneline
 ```
 
+5. class your tasks: main/new feature(topic)/hot fix/release [[GitHub flow|branch]]
+![[Git的分支操作模組.png]]
+
+```bash
+
+```
+
+## Ref
+[^1]: [連猴子都能懂的Git入門指南 | 貝格樂（Backlog）](https://backlog.com/git-tutorial/tw/)
