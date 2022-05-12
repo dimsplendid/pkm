@@ -17,6 +17,8 @@ title: GitHub flow
 3. Create a pull request
 4. Address review comments
 5. Merge your pull request
+> [!Question]
+> Only Merge on branch, pull request on topic?
 6. Delete your branch
 
 
