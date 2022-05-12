@@ -12,7 +12,12 @@ title: GitHub flow
 > Refer to [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)[^1] GitHub Flow is a simpler flow control for modern web app development. And if we should build a more concrete version control, then it still can follow the blog.
 > I like the sentence **"Panaceas don't exist. Consider your own context."**
 
-
+1. Create a branch
+2. Make changes
+3. Create a pull request
+4. Address review comments
+5. Merge your pull request
+6. Delete your branch
 
 
 ## Ref
