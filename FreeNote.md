@@ -12,6 +12,7 @@ This is my first side project
 
 Objective: 
 1. using markdown and YAML
+	1. and
 2. Easy to plugin
 3. preview, backlink and network like obsidian
 4. GitHub integrate
