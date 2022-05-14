@@ -19,6 +19,10 @@ title: GitHub flow
 5. Merge your pull request
 > [!Question]
 > Only Merge on branch, pull request on topic?
+
+> [!Check] Answer
+> Yes, and it works better than I think.
+
 6. Delete your branch
 
 
