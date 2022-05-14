@@ -12,13 +12,14 @@ This is my first side project
 
 Objective: 
 1. using markdown and YAML
-	1. and
+	1. Maybe a simple database that can manage these meta data
 2. Easy to plugin
 3. preview, backlink and network like obsidian
 4. GitHub integrate
-5. GitHub mkdoc integrate
+5. GitHub mkdoc integrate or some similiar way
 6. Copy from hackmd
 7. REPL JS & Python Integrate?
+8. Better Chinese Font support
 
 > [!Note]
 > Sound like I can build a obsidian plugin first?
