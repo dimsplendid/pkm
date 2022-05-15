@@ -13,3 +13,6 @@ title: Python Type Hint
 > [!Note]
 > VS Code 的設定很簡單，裝好 `mypy` 後把設定打開就好
 > ![[Pasted image 20220514211007.png]]
+
+- `Union[str, None]` is the same with `Optional[str]` , but the latter one is simpler and more readable
+- Type alias should be named using CamelCase, like classes.
