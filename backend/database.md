@@ -1,14 +1,14 @@
 ---
 aliases: 
-tags: sql
-date updated: '2021-08-14T10:19:52+08:00'
-
+tags: sql database todo 
 date created: Monday, April 25th 2022, 1:09:14 pm
-date modified: Monday, April 25th 2022, 1:09:14 pm
+date modified: Thursday, May 19th 2022, 10:24:25 am
 title: Database
 ---
 
 # Database
+> [!Danger]
+> Need Update!
 
 ref: [Database Structure and Design Tutorial | Lucidchart](https://www.lucidchart.com/pages/database-diagram/database-design#discovery__top)
 
@@ -17,12 +17,12 @@ ref: [Database Structure and Design Tutorial | Lucidchart](https://www.lucidchar
     > 還沒做到。目前反而多存了許多 redundant
   - Maintains data accuracy and integrity
   - Provides access to the data in useful ways
-- Desinging an efficient, useful database is a matter of following the proper process:
+- Designing an efficient, useful database is a matter of following the proper process:
   > 目前更像是一個大表而己
   - Requirements analysis, or identifying the purpose of your database
   - Organizing data into tables
   - Specifying primary keys and analyzing relationships
-  - Normalizing to standarize the tables
+  - Normalizing to standardize the tables
 
 > [!Note]
 > There are other database models, this is about Relational Database Model.
