@@ -73,11 +73,6 @@ And cookie have more options, check the documents[^1][^2].
 In the first topic, we see we can set the http status easily, but this can not change when different situation.
 
 
-<iframe
-		frameborder=0 height=250 width=550 scrolling="no"
-		src="https://github.com/dimsplendid/fastapi-data-science/blob/2bb60bed92d465428e957015ceade9474c221785/chapter2_asyncio_01.py#L1-L5"
-		>
-</iframe>
 
 ## Reference
 
