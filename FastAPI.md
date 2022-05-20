@@ -10,3 +10,4 @@ title: FastAPI
 
 - [[Python Asynchronous IO]]
 - [[Developing a RESTful API with FastAPI]]
+- [[Managing Pydantic Data Models in FastAPI]]

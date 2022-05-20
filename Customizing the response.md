@@ -47,7 +47,7 @@ Only show the customized data.
 > I still don't get it. Since we can get the data from query specific data from the database(and this is what I did in django). Why we should define a response model?
 
 > [!Tip]
-> In the practice, we repeat many codes, where is **DRY**? Please refer to Ch. 4, [[Managing pydantic Data Models in FastAPI]].
+> In the practice, we repeat many codes, where is **DRY**? Please refer to Ch. 4, [[Managing Pydantic Data Models in FastAPI]].
 
 ## The Response Parameter
 

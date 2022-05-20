@@ -25,3 +25,11 @@ uvicorn main:app
 
 > [!Warning]
 > Not `uvicorn main.py:app`, it's `uvicorn main:app`
+
+> [!Hint]
+> 如果是在不一樣的路徑(上層)，可以這樣
+> ```shell
+> uvicorn parent_dir.app:app
+> ```
+>
+
