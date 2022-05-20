@@ -2,7 +2,7 @@
 aliases: 
 tags: python fastapi web 
 date created: Wednesday, May 18th 2022, 10:51:33 pm
-date modified: Wednesday, May 18th 2022, 11:45:24 pm
+date modified: Friday, May 20th 2022, 2:29:26 pm
 title: Customizing the Response
 ---
 
@@ -49,7 +49,7 @@ Only show the customized data.
 > [!Tip]
 > In the practice, we repeat many codes, where is **DRY**? Please refer to Ch. 4, [[Managing pydantic Data Models in FastAPI]].
 
-### The Response Parameter
+## The Response Parameter
 
 - Custom headers
 - Cookie
@@ -66,13 +66,29 @@ async def custom_header(response: Response):
 	...
 ```
 
-And cookie have more options, check the documents[^1][^2].
+And cookie have more options, check the documents[^1].[^2]
 
-### Setting the status code dynamically
+### Setting the Status Code Dynamically
 
 In the first topic, we see we can set the http status easily, but this can not change when different situation.
 
+```python
+@app.put("/posts/{id}")
+async def update_or_create_post(id: int, post: Post, response: Response):
+    if id not in posts:
+        response.status_code = status.HTTP_201_CREATED
+    posts[id] = post
+    return posts[id]
+```
 
+> [!Warning]
+> Don't use this approach to set _error status codes_, using the `HTTPException`
+
+## Raising HTTP Errors
+
+Return the informative message: the **status code** and the **payload**.
+
+## Building a Custom Response
 
 ## Reference
 
