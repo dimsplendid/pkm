@@ -2,7 +2,7 @@
 aliases: 
 tags: python fastapi web 
 date created: Wednesday, May 18th 2022, 10:51:33 pm
-date modified: Friday, May 20th 2022, 2:29:26 pm
+date modified: Friday, May 20th 2022, 4:19:45 pm
 title: Customizing the Response
 ---
 
@@ -66,7 +66,7 @@ async def custom_header(response: Response):
 	...
 ```
 
-And cookie have more options, check the documents[^1].[^2]
+And cookie have more options, check the documents.[^1][^2]
 
 ### Setting the Status Code Dynamically
 
@@ -90,7 +90,32 @@ Return the informative message: the **status code** and the **payload**.
 
 ## Building a Custom Response
 
+By default, [[FastAPI]] using `JSONResponse` to serialize the data. However, there are other response classes that cover common case.
+
+- `HTMLResponse`
+- `PlainTextResponse`
+- `RedirectResponse`
+- `StreamingResponse`
+- `FileResponse`
+
+And we can using them by either setting the `response_class` argument on the path decorator or directly returning a response instance.
+
+### Serving a File
+
+Need install `aiofiles`
+
+```bash
+pip install aiofiles
+```
+
+### Custom Response
+
+And if there is a case that's not covered by the provided classes, we always can make our own by using `Response` class.
+
+See more in the Starlette documentation[^3]
+
 ## Reference
 
-[^1]: [Responses - Starlette](https://www.starlette.io/responses/#set-cookie)
+[^1]: [Responses - Starlette#set-cookie](https://www.starlette.io/responses/#set-cookie)
 [^2]: [Set-Cookie - HTTP | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie)
+[^3]: [Responses - Starlette#response](https://www.starlette.io/responses/#response)
