@@ -58,7 +58,7 @@ To simulate the transmittance, and fitting with binomial function of $\Delta nd$
 $$
 T = -108.82(\Delta nd)^2+76.159(\Delta nd)-78.468
 $$
-I want check this with Taylor expansion.
+> I want check this with Taylor expansion.
 
 ## Some Keywords
 [^1]: ADS(Advanced Super Dimension): BOE 的專利，廣視角(178°)，但對比只能到 1500。和 VA ~3000 相比沒有競爭力。
