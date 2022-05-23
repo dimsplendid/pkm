@@ -52,13 +52,53 @@ S_{Cell} &= \frac{d\cdot (\Delta n(n_e+n_o))^2}{K_{avg}}
 $$
 And using the equation of transmittance($T$), which is
 $$
-T=\frac{1}{2}\sin^2(2\psi)\cdot\sin^2(\frac{\Delta n d}{\lambda}\cdot\pi)
+T\propto\sin^2(2\psi)\cdot\sin^2(\frac{\Delta n d}{\lambda}\cdot\pi)
 $$
 To simulate the transmittance, and fitting with binomial function of $\Delta nd$, which is
 $$
-T = -108.82(\Delta nd)^2+76.159(\Delta nd)-78.468
+T = -108.82(\Delta nd)^2+76.159(\Delta nd)-7.8468
 $$
-> I want check this with Taylor expansion.
+> [!Note] Little Research
+> Just using Taylor expansion
+> $$
+> \begin{align*}
+> T &= K(-\frac{\pi^2}{\lambda^2}x^2+\frac{\pi^2}{\lambda}x-\frac{\pi^2}{4}+1)+O((x-\frac{\lambda}{2})^4)\\
+> &\approx -155.80 (\Delta nd)^2 + 91.77 (\Delta nd) - 8.03
+> \end{align*}
+> $$
+> ![[Pasted image 20220523223907.png]]
+> The approximation and the model are both not quite fit the result the paper generate.
+> The wavelength is set to 589 nm,
+> And interestingly,  if I using 700 nm, the approx is almost the same.
+> ![[Pasted image 20220523223846.png]]
+> And the Taylor expansion approximation is
+> $$
+> T\approx -110.30 (\Delta nd)^2 + 77.22 (\Delta nd) - 8.03
+> $$
+
+## BMCD
+
+ADS is plane electric field, which exists the dark field region at the edge of electrode.
+
+![[Pasted image 20220523224630.png]]
+This method is increase more CR at 8K than 4K(結果表是用 4K)
+![[Pasted image 20220523224809.png]]
+
+## PI Thick
+
+Improve the anchoring force.
+
+![[Pasted image 20220523225611.png]]
+
+![[Pasted image 20220523225711.png]]
+
+![[Pasted image 20220523230114.png]]
+
+## POL P.E.
+![[Pasted image 20220523230552.png]]
+
+簡而言之，貼的準一點。
+
 
 ## Some Keywords
 [^1]: ADS(Advanced Super Dimension): BOE 的專利，廣視角(178°)，但對比只能到 1500。和 VA ~3000 相比沒有競爭力。
