@@ -40,9 +40,25 @@ $$
 CR 在全部的因素都修改後甚至可以提升至 3000。這篇論文也想探討個別因素的貢獻。
 
 ![[Pasted image 20220523171131.png]]
+
 ## LC & CG
 
-
+The well known relationship between scatter coefficients($S_{Cell}$) and $CR$:
+$$
+\begin{align*}
+\frac{1}{CR} &\propto S_{Cell} \\
+S_{Cell} &= \frac{d\cdot (\Delta n(n_e+n_o))^2}{K_{avg}}
+\end{align*}
+$$
+And using the equation of transmittance($T$), which is
+$$
+T=\frac{1}{2}\sin^2(2\psi)\cdot\sin^2(\frac{\Delta n d}{\lambda}\cdot\pi)
+$$
+To simulate the transmittance, and fitting with binomial function of $\Delta nd$, which is
+$$
+T = -108.82(\Delta nd)^2+76.159(\Delta nd)-78.468
+$$
+I want check this with Taylor expansion.
 
 ## Some Keywords
 [^1]: ADS(Advanced Super Dimension): BOE 的專利，廣視角(178°)，但對比只能到 1500。和 VA ~3000 相比沒有競爭力。
