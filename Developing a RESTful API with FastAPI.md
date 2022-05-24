@@ -16,5 +16,5 @@ title: Developing a RESTful API
 
 ## Ref
 
-[^1]: F. Voron, _Building Data Science Applications with FastAPI: Develop, Manage, and Deploy Efficient Machine Learning Applications with Python_ (2021).
+[^1]: F. Voron, _Building Data Science Applications with FastAPI: Develop, Manage, and Deploy Efficient Machine Learning Applications with Python_ (2021).[[François Voron - Building Data Science Applications with FastAPI_ Develop, manage, and deploy efficient machine learning applications with Python (2021, Packt Publishing) - libgen.li.pdf]]
 [^2]: [Requests - Starlette](https://www.starlette.io/requests/)
