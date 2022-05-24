@@ -10,5 +10,5 @@ title: Managing Pydantic Data Models in FastAPI
 
 - [[Defining models and their field types with Pydantic]]
 - [[Creating model variations with class inheritance]]
-- Adding custom data validation with Pydantic
+- [[Adding custom data validation with Pydantic]]
 - Working with Pydantic objects
