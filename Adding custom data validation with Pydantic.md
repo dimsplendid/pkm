@@ -62,4 +62,4 @@ class UserRegistration(BaseModel):
 
 ## Applying Validation Before Pydantic Parsing
 
-By default, the validators are run after Pydantic has done its parsing work. But sometimes we may wish to provide some custom parsing logic to transform input, that is, we need to run the validator befor Pydantic parser.
+By default, the validators are run after Pydantic has done its parsing work. But sometimes we may wish to provide some custom parsing logic to transform input, that is, we need to run the validator before Pydantic parser.
