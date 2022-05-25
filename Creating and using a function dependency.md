@@ -23,3 +23,7 @@ A dependency can be either as a function or a callable class. In this section, w
 > 	...
 >```
 
+
+## Get an Object or Raise a 404 Error
+
+**404 Not Found** is a perfect situation for dependency injection.
