@@ -97,7 +97,7 @@ Improve the anchoring force.
 ## POL P.E.
 ![[Pasted image 20220523230552.png]]
 
-簡而言之，貼的準一點。
+簡而言之，提升偏光效率(Polarization efficiency, PE) & 貼的準一點。
 
 
 ## Some Keywords
