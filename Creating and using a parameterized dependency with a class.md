@@ -7,3 +7,5 @@ title: Creating and using a parameterized dependency with a class
 ---
 
 # Creating and Using a Parameterized Dependency with a Class
+
+Because all the arguments of the function are set by the dependency injection system, we can't add an argument to the function.
