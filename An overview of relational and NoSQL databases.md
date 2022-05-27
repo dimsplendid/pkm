@@ -39,6 +39,8 @@ The documents are stored in **collections** and might no have all of the same at
 
 ![[document-oriented schema example.png]]
 
+To retrieve a post and all its comments, all data comes in one query.
+
 > [!Hint] Dictionary
 > **de facto**
 > _adverb_
@@ -46,3 +48,13 @@ The documents are stored in **collections** and might no have all of the same at
 > 
 > _adjective_
 > - existing or holding a specified position in fact but not necessarily by legal right
+
+To summary,
+
+- Relational database: good for structure data with a lot of relationships between entities. However, we should precisely define the schema and consider a migration system to update the schema.
+- Document-oriented database: If data is highly variable or if the project is not mature enough.
+
+For small and medium-sized applications, the choice doesn't really matter.
+> 我目前的狀況(笑
+
+In [[Python Asynchronous IO]] we mentioned that it was important to carefully select the libraries to perform I/O operation. Of course, databases are particularly important in this context!

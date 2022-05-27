@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: python web
+tags: fastapi python web
 date created: Sunday, May 15th 2022, 4:13:35 pm
 date modified: Monday, May 16th 2022, 12:17:37 am
 title: Python Asynchronous IO
