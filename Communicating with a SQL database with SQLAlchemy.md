@@ -65,3 +65,16 @@ The `get_database` function is for dependency.
 > [!Hint] Use a dependency to retrieve a database instance
 > It would totally work if we just import the database. However, it would make our life very hard when trying to implement unit test. With a dependency, FastAPI makes it very easy to swap it with another function. See more in [[Testing an API Asynchronously with pytest and HTTPX]]
 
+```python
+@app.on_event("startup")
+async def startup():
+    await get_database().connect()
+    metadata.create_all(sqlalchemy_engine)
+
+@app.on_event("shutdown")
+async def shutdown():
+    await get_database().disconnect()
+```
+
+Decorating functions with the `on_event` decorators allows us to trigger some useful logic when FastAPI starts or stops. In this case, we just connect & disconnect with database.
+
