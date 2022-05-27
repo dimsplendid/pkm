@@ -60,3 +60,8 @@ def get_database() -> Database:
     return database
 ```
 
+The `get_database` function is for dependency.
+
+> [!Hint] Use a dependency to retrieve a database instance
+> It would totally work if we just import the database. However, it would make our life very hard when trying to implement unit test. With a dependency, FastAPI makes it very easy to swap it with another function. See more in [[Testing an API Asynchronously with pytest and HTTPX]]
+
