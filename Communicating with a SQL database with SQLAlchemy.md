@@ -78,3 +78,25 @@ async def shutdown():
 
 Decorating functions with the `on_event` decorators allows us to trigger some useful logic when FastAPI starts or stops. In this case, we just connect & disconnect with database.
 
+## Making Insert Queries
+
+```python
+@app.post("/posts", response_model=PostDB, status_code=status.HTTP_201_CREATED)
+async def create_post(
+    post: PostCreate,
+    database: Database = Depends(get_database)
+) -> PostDB:
+	# SQLAlchemy expression language
+    insert_query = posts.insert().values(post.dict())
+
+	# Actually perform the query
+    post_id = await database.execute(insert_query)
+    
+    post_db = await get_post_or_404(post_id, database)
+    
+    return post_db
+```
+
+- Rather than writing SQL queries by hand, we rely on the **SQLAlchemy expression language**, this would produce proper SQL query for different engines.
+- This query is built directly from the `posts` object, which is the `Table` instance that we defined earlier.
+- 
