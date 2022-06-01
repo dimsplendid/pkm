@@ -89,7 +89,8 @@ async def create_post(
 	# SQLAlchemy expression language
     insert_query = posts.insert().values(post.dict())
 
-	# Actually perform the query
+	# Actually perform the query,
+	# execute it asynchronously thanks to `database`
     post_id = await database.execute(insert_query)
     
     post_db = await get_post_or_404(post_id, database)
@@ -99,4 +100,4 @@ async def create_post(
 
 - Rather than writing SQL queries by hand, we rely on the **SQLAlchemy expression language**, this would produce proper SQL query for different engines.
 - This query is built directly from the `posts` object, which is the `Table` instance that we defined earlier.
-- 
+- If the Pydantic model fits the database schema, we can using `.dict()` method to the `.values()` directly. 
