@@ -37,7 +37,7 @@ posts = sqlalchemy.Table(
 
 `metadata` object: Keep all the information of a database schema together. This should only create once in the whole project and always use the same one throughout.
 
-`Table`: just like excel sheet, and it contains many `Column`s. The first argument is the name of the table, followed by the metadata object. Then list all of the columns that should be defined in our table.
+`Table`: just like Excel sheet, and it contains many `Column`s. The first argument is the name of the table, followed by the metadata object. Then list all of the columns that should be defined in our table.
 
 In this practice, we also define the corresponding Pydantic model for the post entity. These must match the SQL definition to avoid any errors from the database when we try to insert a new row later.
 
@@ -103,5 +103,29 @@ async def create_post(
 
 - Rather than writing SQL queries by hand, we rely on the **SQLAlchemy expression language**, this would produce proper SQL query for different engines.
 - This query is built directly from the `posts` object, which is the `Table` instance that we defined earlier.
-- If the Pydantic model fits the database schema, we can using `.dict()` method to the `.values()` directly.
+- If the Pydantic model fits the database schema, we can use `.dict()` method to the `.values()` directly.
 
+## Making Select Queries
+
+Typically, we have 2 kinds of read endpoints in the API. One is list and one is the single object.
+
+> [!Note]
+> This is quite similar to Django's convention. (`DetailView`, `ListView`)
+
+```python
+@app.get("/posts")
+async def list_posts(
+    pagination: tuple[int, int] = Depends(pagination),
+    database: Database = Depends(get_database),
+) -> list[PostDB]:
+    skip, limit = pagination
+
+	# Similar to the insertion query, 
+	# using SQLAlchemy expression langauge and then execute
+    select_query = posts.select().offset(skip).limit(limit)
+    rows = await database.fetch_all(select_query)
+    
+    results = [PostDB(**row) for row in rows]
+    
+    return results
+```
