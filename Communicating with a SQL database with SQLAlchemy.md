@@ -187,6 +187,14 @@ For more advanced usage, check the documents[^1]
 
 ## Adding Relationships
 
+Using `ForeignKey`.
+
+And in REST API, there are some cases where it make sense to automatically retrieve the associated objects of an entity. Such as, the comments of the post.
+
+```python
+class PostPublic(PostDB):
+    comments: list[CommentDB]
+```
 
 
 ## Reference
