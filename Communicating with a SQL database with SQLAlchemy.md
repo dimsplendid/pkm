@@ -128,4 +128,66 @@ async def list_posts(
     results = [PostDB(**row) for row in rows]
     
     return results
+
+@app.get("/posts/{id}", response_model=PostDB)
+async def get_post(post: PostDB = Depends(get_post_or_404)) -> PostDB:
+    return post
 ```
+
+The **Get one object** may use many times, so it makes sense to put it in a dependency.
+
+```python
+async def get_post_or_404(
+    id: int, database: Database = Depends(get_database)
+) -> PostDB:
+    select_query = posts.select().where(posts.c.id == id)
+    raw_post = await database.fetch_one(select_query)
+    
+    if raw_post is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND)
+    
+    return PostDB(**raw_post)
+```
+
+> [!Note]
+> Access the column via its name from the `c` attribute of the `table` object. And the boolean compare in the `where`  would overload by the SQLAlchemy to produce SQL expressions.
+
+## Making Update and Delete Queries
+
+The main difference is how we built the SQLAlchemy expressions.
+
+```python
+@app.patch("/posts/{id}", response_model=PostDB)
+async def update_post(
+    post_update: PostPartialUpdate,
+    post: PostDB = Depends(get_post_or_404),
+    database: Database = Depends(get_database)
+) -> PostDB:
+    update_query = (
+        posts.update()
+        .where(posts.c.id == post.id)
+        .values(post_update.dict(exclude_unset=True))
+    )
+    post_id = await database.execute(update_query)
+
+    post_db = await get_post_or_404(post_id, database)
+    
+    return post_db
+
+@app.delete("/posts/{id}", status_code=status.HTTP_204_NO_CONTENT)
+async def delete_post(
+    post: PostDB = Depends(get_post_or_404),
+    database: Database = Depends(get_database),
+):
+    delete_query = posts.delete().where(posts.c.id == post.id)
+    await database.execute(delete_query)
+```
+
+For more advanced usage, check the documents[^1]
+
+## Adding Relationships
+
+
+
+## Reference
+[^1]: [SQL Expression Language Tutorial — SQLAlchemy 1.3 Documentation](https://docs.sqlalchemy.org/en/13/core/tutorial.html)
