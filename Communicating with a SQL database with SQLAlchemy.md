@@ -132,6 +132,34 @@ async def list_posts(
 
 ## Setting up a Database Migration System with Alembic
 
+Install alembic
+
+```bash
+$ pip install alembic
+```
+
+Initialize
+
+```bash
+$ alembic init alembic
+```
+
+Setup the `alembic.ini`
+
+```ini
+sqlalchemy_url = sqlite:///sqlalchemy.db
+```
+
+Setup the `alembic/env.py`
+
+```python
+from models import metadata
+...
+# target_metadata = None # Default
+target_metadata = metadata
+...
+```
+
 Using the command to auto-generate the migration script:
 
 ```bash
@@ -142,3 +170,12 @@ $ alembic revision --autogenerate -m "Initial migration"
 > [Alembic](https://alembic.sqlalchemy.org/en/latest/) is a lightweight database migration tool for usage with the [SQLAlchemy](https://www.sqlalchemy.org/) Database Toolkit for Python.
 
 > [!Warning]
+> **`--autogenerate` doesn't detect everything**
+> It's not able to detect ambiguous changes such as rename a column, it will delete the old one and create another. As a result, the data for this column will be lost! This is why we should always carefully review the migration scripts and make the required changes for edge cases.
+> > 比起來 Django 果然還是強大的多
+
+Finally, apply the migrations to the database
+
+```bash
+$ alembic upgrade head
+```
