@@ -11,28 +11,28 @@ title: Git
 1. download code from repository
 
 ```bash
-git pull
+$ git pull
 ```
 
 2. upload committed code to repository
 
 ```bash
-git push
+$ git push
 ```
 
 3. commit: save changing code to git, see more in [[How to commit message]]
 
 ```bash
-git add new_files # or using `git add .`
-git commit -a # Using a vi-like editor to write more information
+$ git add new_files # or using `git add .`
+$ git commit -a # Using a vi-like editor to write more information
 ```
 
 4. Watch the commit log, and this is why we should put good commit messages
 
 ```bash
-git log
+$ git log
 # or
-git log --oneline
+$ git log --oneline
 ```
 
 5. class your tasks: main/new feature(topic)/hot fix/release [[GitHub flow|branch]]

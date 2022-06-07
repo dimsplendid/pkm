@@ -132,6 +132,13 @@ async def list_posts(
 
 ## Setting up a Database Migration System with Alembic
 
+Using the command to auto-generate the migration script:
+
+```bash
+$ alembic revision --autogenerate -m "Initial migration"
+```
+
 > [!Note]
 > [Alembic](https://alembic.sqlalchemy.org/en/latest/) is a lightweight database migration tool for usage with the [SQLAlchemy](https://www.sqlalchemy.org/) Database Toolkit for Python.
 
+> [!Warning]

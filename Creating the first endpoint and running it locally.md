@@ -20,7 +20,7 @@ app = FastAPI()
 ```
 
 ```bash
-uvicorn main:app
+$ uvicorn main:app
 ```
 
 > [!Warning]
