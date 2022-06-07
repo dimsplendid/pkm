@@ -1,12 +1,17 @@
 ---
-date updated: '2021-08-15T17:38:40+08:00'
-
+aliases: 
+tags: database todo 
+date created: Monday, April 25th 2022, 1:09:14 pm
+date modified: Tuesday, June 7th 2022, 5:00:15 pm
+title: ORM
 ---
 
 # ORM
 
-ref: [What is the difference between ODM and ORM? | by Juliana Tyler | Medium](https://medium.com/@julianam.tyler/what-is-the-difference-between-odm-and-orm-267bbb7778b0)
+ORM(Object Relational Mapping)
 
-ORM(Object Relational Model) does would be to think of it as an excel spread sheet, with rows and columns. When using this set up, you want to be sure you have a great plan on how you want to tackle the current application, it does not allow as many modifications like [[ODM]] does.
+將物件的使用映射到 SQL 查詢，不僅簡化了複雜度、還可以與程式風格更相容。而且和物件導向更加接近
 
-Relation: connection between data
+> [!Note]
+> SQL Database 的設計和物件導向可以說是背道而馳
+> ref:??

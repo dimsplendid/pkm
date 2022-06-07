@@ -23,8 +23,8 @@ quote
 只把 DB 分離出來做掛載，可以讓每次新的 container 讀取同一個 DB，避免因 container 不同而資料要重新建立的問題。
 
 ```bash
-docker volume create todo-db
-docker run -dp 3000:3000 -v todo-db:/etc/todos getting-started
+$ docker volume create todo-db
+$ docker run -dp 3000:3000 -v todo-db:/etc/todos getting-started
 ```
 
 ## Dev-Mode Container
@@ -33,12 +33,12 @@ docker run -dp 3000:3000 -v todo-db:/etc/todos getting-started
 
 Linux:
 ```bash
-docker run -dp 3000:3000 -w /app -v "$(pwd):/app" node:12-alpine sh -c "yarn install && yarn run dev"
+$ docker run -dp 3000:3000 -w /app -v "$(pwd):/app" node:12-alpine sh -c "yarn install && yarn run dev"
 ```
 
 Windows CMD:
-```cmd
-docker run -dp 3000:3000 -w /app -v "%cd%:/app" node:12-alpine sh -c "yarn install && yarn run dev"
+```shell
+$ docker run -dp 3000:3000 -w /app -v "%cd%:/app" node:12-alpine sh -c "yarn install && yarn run dev"
 ```
 
 ![[mind_blown.gif]]

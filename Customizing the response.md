@@ -105,7 +105,7 @@ And we can using them by either setting the `response_class` argument on the pat
 Need install `aiofiles`
 
 ```bash
-pip install aiofiles
+$ pip install aiofiles
 ```
 
 ### Custom Response

@@ -55,20 +55,20 @@ And the request method is different:
 The request body:
 ```bash
 # Request Body
-http -v POST host/user_rb name="John" age=30
+$ http -v POST host/user_rb name="John" age=30
 # Or...
 # For more complex JSON structure, it's advided that pipe a formatted JSON 
 # into HTTPie rather than use parameters.
-echo '{"name": "John", "age": 30}' | http POST host/user_rb
+$ echo '{"name": "John", "age": 30}' | http POST host/user_rb
 ```
 
 > [!Warning]
 > In CMD, it seems the different new line because you can't use the second method. I still don't know how to fix it.
 
 The Form
-```shell
+```bash
 # Form
-http -v --form POST host/user_f name=John age=30
+$ http -v --form POST host/user_f name=John age=30
 ```
 
 Contrast to JSON payloads, FastAPI can't define `pydantic` models to validate form data

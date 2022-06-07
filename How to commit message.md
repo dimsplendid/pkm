@@ -23,11 +23,11 @@ Always using `git commit -a`
 有好的 commit message, `git log` 等指令就可發揮強大的作用。
 
 ```bash
-git blame
-git revert
-git rebase
-git log
-git shortlog
+$ git blame
+$ git revert
+$ git rebase
+$ git log
+$ git shortlog
 ```
 
 而內心有了好的架構，看他人的 commit 和 pull request 也更加清楚。
