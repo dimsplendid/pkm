@@ -2,7 +2,7 @@
 aliases: 
 tags: fastapi python web 
 date created: Friday, May 27th 2022, 1:45:53 pm
-date modified: Friday, May 27th 2022, 2:40:10 pm
+date modified: Tuesday, June 7th 2022, 1:43:46 pm
 title: Communicating with a SQL Database with SQLAlchemy
 ---
 
@@ -129,3 +129,6 @@ async def list_posts(
     
     return results
 ```
+
+## Setting up a Database Migration System with Alembic
+
