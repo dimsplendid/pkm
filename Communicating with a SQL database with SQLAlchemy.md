@@ -132,3 +132,6 @@ async def list_posts(
 
 ## Setting up a Database Migration System with Alembic
 
+> [!Note]
+> [Alembic](https://alembic.sqlalchemy.org/en/latest/) is a lightweight database migration tool for usage with the [SQLAlchemy](https://www.sqlalchemy.org/) Database Toolkit for Python.
+
