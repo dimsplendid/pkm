@@ -21,8 +21,11 @@ We want to abstract the operation the the SQL and only deal with proper objects 
 > 我發現他這裡的 pydantic model 和 database model 會定義在一個檔案。不過對於更大、更複雜的狀況，應該要如同官網上一般拆開。
 
 > [!Question]
-> 現在的 `partialUpdate` 幾乎要重寫整個 model, 應該會有更好的方法？
+> 1. 現在的 `partialUpdate` 幾乎要重寫整個 model, 應該會有更好的方法？
+> 2. Pydantic model 和 ORM model 需要大量重複(這點 Django 已經自動完成了)
 
+> [!Note]
+> Tortoise ORM 的 chain query 仍有 type hint(SQLAlchemy 就沒有), 真不錯
 
 
 

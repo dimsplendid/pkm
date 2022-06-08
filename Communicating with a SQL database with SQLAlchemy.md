@@ -2,7 +2,7 @@
 aliases: 
 tags: fastapi python web 
 date created: Friday, May 27th 2022, 1:45:53 pm
-date modified: Tuesday, June 7th 2022, 1:43:46 pm
+date modified: Wednesday, June 8th 2022, 2:45:50 pm
 title: Communicating with a SQL Database with SQLAlchemy
 ---
 
@@ -149,8 +149,11 @@ async def get_post_or_404(
     return PostDB(**raw_post)
 ```
 
-> [!Note]
+> [!Hint]
 > Access the column via its name from the `c` attribute of the `table` object. And the boolean compare in the `where`  would overload by the SQLAlchemy to produce SQL expressions.
+
+> [!Note]
+> `get_object_or_404` 也是在 Django 中常使用的 function, 但在 FastAPI dependency injection 下似乎更加強大？不過 Django 我也還是皮毛而已。
 
 ## Making Update and Delete Queries
 
@@ -195,8 +198,6 @@ And in REST API, there are some cases where it make sense to automatically retri
 class PostPublic(PostDB):
     comments: list[CommentDB]
 ```
-
-
 
 ```
 
@@ -249,5 +250,10 @@ Finally, apply the migrations to the database
 ```bash
 $ alembic upgrade head
 ```
+
+> [!Note]
+> `alembic` 無法使用 relative import(或者說還需要設定什麼，不過未來應該以 ORM 為主，解法暫且擱置)
+
 ## Reference
+
 [^1]: [SQL Expression Language Tutorial — SQLAlchemy 1.3 Documentation](https://docs.sqlalchemy.org/en/13/core/tutorial.html)
