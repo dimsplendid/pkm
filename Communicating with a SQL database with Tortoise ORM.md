@@ -19,7 +19,16 @@ We want to abstract the operation the the SQL and only deal with proper objects 
 
 ## Creating Database Models
 
-
+```python
+class PostTortoise(Model):
+    id = fields.IntField(pk=True, generated=True)
+    publication_date = fields.DatetimeField(null=False)
+    title = fields.CharField(max_length=255, null=False)
+    content = fields.TextField(null=False)
+    
+    class Meta:
+        table = "posts"
+```
 
 > [!Note]
 > 我發現他這裡的 pydantic model 和 database model 會定義在一個檔案。不過對於更大、更複雜的狀況，應該要如同官網上一般拆開。
