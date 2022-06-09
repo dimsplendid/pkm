@@ -17,6 +17,10 @@ We want to abstract the operation the the SQL and only deal with proper objects 
 > **[[Tortoise ORM]]**[^1] is an easy-to-use `asyncio` ORM inspired by Django.
 > > 這樣我應該可以輕易入門吧 XD
 
+## Creating Database Models
+
+
+
 > [!Note]
 > 我發現他這裡的 pydantic model 和 database model 會定義在一個檔案。不過對於更大、更複雜的狀況，應該要如同官網上一般拆開。
 
