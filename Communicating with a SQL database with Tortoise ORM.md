@@ -19,6 +19,8 @@ We want to abstract the operation the the SQL and only deal with proper objects 
 
 ## Creating Database Models
 
+Tortoise ORM:
+
 ```python
 class PostTortoise(Model):
     id = fields.IntField(pk=True, generated=True)
@@ -27,14 +29,29 @@ class PostTortoise(Model):
     content = fields.TextField(null=False)
     
     class Meta:
+	    # control the table name
         table = "posts"
 ```
 
+Pydantic:
+
+```python
+class PostBase(BaseModel):
+    title: str
+    content: str
+    publication_date: datetime = Field(default_factory=datetime.now)
+    
+    class Config:
+	    # Allow us to transform an ORM object instance into a Pydatic
+	    # ojbect instance.
+        orm_mode = True
+```
 > [!Note]
-> 我發現他這裡的 pydantic model 和 database model 會定義在一個檔案。不過對於更大、更複雜的狀況，應該要如同官網上一般拆開。
+> 我發現他這裡的 pydantic model 和 database model 會定義在一個檔案。不過對於更大、更複雜的狀況，應該要如同官網範例上一般拆開。
 
 > [!Question]
 > 1. 現在的 `partialUpdate` 幾乎要重寫整個 model, 應該會有更好的方法？
+> 	- 不過 pydantic 作為驗證的功能，同一個 ORM 下用不同的 pydantic model 讀入和回饋看起來不錯呢。讓我再繼續看下去
 > 2. Pydantic model 和 ORM model 需要大量重複 (這點 Django 已經自動完成了)
 
 > [!Note]
