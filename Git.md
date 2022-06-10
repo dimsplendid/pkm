@@ -35,7 +35,11 @@ $ git log
 $ git log --oneline
 ```
 
-5. class your tasks: main/new feature(topic)/hot fix/release [[GitHub flow|branch]]
+5. class your tasks: main/new feature(topic)/hot fix/release branch.
+> [!Note]
+> 未來使用 [[GitHub flow]], 較為簡單且可以和 project, issues 做關聯，超屌XD
+
+
 ![[Git的分支操作模組.png]]
 
 ```bash
