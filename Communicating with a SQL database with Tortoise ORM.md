@@ -58,7 +58,7 @@ class PostBase(BaseModel):
 > 2. Pydantic model 和 ORM model 需要大量重複 (這點 Django 已經自動完成了)
 >
 
-> [!Done] Answer
+> [!Check] Answer
 > Tortoise ORM 確實有自動生成 Pydantic Model 的功能，但也因此犠牲了 Pydantic 的彈性。當然還是可以嘗試是否合適。
 
 ## Setting up the Tortoise Engine
