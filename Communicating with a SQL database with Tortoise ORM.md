@@ -88,7 +88,7 @@ register_tortoise(
 )
 ```
 
-- The `connections` key associating a database, following the standard convention format[^2].
+- The `connections` key associating a database, following the standard convention format[^2]. In most projects, we'll probably have one database named default, but it allows us to set several databases if needed.
 - In the `apps` key, you'll be able to declare all your modules containing your Tortoise models. The first key just below apps, that is, `models`, will be the **prefix** with which you'll be able to refer to the associated models. You can name it how you want, but if you place all your models under the same scope, then `models` is a good candidate. This prefix is especially import when defining **foreign keys**.
 
 > [!Note]
