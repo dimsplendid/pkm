@@ -159,6 +159,8 @@ async def get_post(
     return PostPublic.from_orm(post)
 ```
 
+By default, Tortoise is lazy and doesn't make the additional query. So we need call the `prefetch_related` method on our query.
+
 > [!Note]
 > Tortoise ORM 的 chain query 仍有 type hint(SQLAlchemy 就沒有), 真不錯
 
@@ -213,7 +215,34 @@ The main point is the `post` field, notice that we use the `models` prefix; this
 > [!Note]
 > 必竟是參考 Django。順帶一提，Django 可以自動生成 `[name]_set` 這樣的 related name，而且也不用 `models` 這種前綴，真的很厲害。
 
+**`models.py`**
 
+```python
+class CommentBase(BaseModel):
+    post_id: int
+    publication_date: datetime = Field(default_factory=datetime.now)
+    content: str
+    
+    class Config:
+        orm_mode = True
+```
+
+When provide `post_id`, Tortoise ORM would understands that we are referring to the identifier of the foreign key field, called `post`
+
+In a REST API, sometimes, it makes sense to automatically retrieve the associated objects of an entity in one request.
+
+**`models.py`**
+
+```python
+class PostPublic(PostDB):
+    comments: list[CommentDB]
+
+    @validator("comments", pre=True)
+    def fetch_comments(cls, v):
+        return list(v)
+```
+
+Thanks to Tortoise, we can retrieve the comments of a  post by simply doing `post.comments`. This is convenient, but this attribute is not directly a list of data: object into a `PostPublict`, Pydantic will try to parse this query set and fail. However, calling `list` on this query set forces it to output the data. That is the purpose of this validator. Notice that we set it with `pre=True` to make sure it's called before the built-in Pydantic validation.
 
 ## Ref
 
