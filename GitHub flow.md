@@ -31,6 +31,8 @@ $ git checkout [branch_name]
 $ git merge master
 ```
 
+> [!Note]
+> Although I thought this method is fit my need, I read some comments that some people disagree this approach, see more information at [Merging vs. Rebasing | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/merging-vs-rebasing) later
 
 ## Ref
 
