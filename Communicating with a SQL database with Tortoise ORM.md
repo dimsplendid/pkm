@@ -19,7 +19,7 @@ We want to abstract the operation the the SQL and only deal with proper objects 
 
 ## Creating Database Models
 
-**models.py**
+**`models.py`**
 
 Tortoise ORM:
 
@@ -65,7 +65,7 @@ class PostBase(BaseModel):
 
 We have to configure the Tortoise engine to set the database connection string and the location of our models. To do this, Tortoise comes with a utility function for FastAPI that does all the required task. In particular, it automatically adds event handlers to open and close the connection at startup and shutdown; this is something we had to do by hand with SQLAlchemy.
 
-**app.py**
+**`app.py`**
 
 ```python
 TORTOISE_ORM = {
@@ -81,18 +81,139 @@ TORTOISE_ORM = {
 }
 
 register_tortoise(
-    app,
-    config=TORTOISE_ORM,
-    generate_schemas=True,
-    add_exception_handlers=True,
+    app, # FastAPI instance
+    config=TORTOISE_ORM, # Configuration that define above
+    generate_schemas=True, # automatically create the table's schema
+    add_exception_handlers=True, # add cutom exception handlers to FastAPI
 )
 ```
 
 - The `connections` key associating a database, following the standard convention format[^2]. In most projects, we'll probably have one database named default, but it allows us to set several databases if needed.
 - In the `apps` key, you'll be able to declare all your modules containing your Tortoise models. The first key just below apps, that is, `models`, will be the **prefix** with which you'll be able to refer to the associated models. You can name it how you want, but if you place all your models under the same scope, then `models` is a good candidate. This prefix is especially import when defining **foreign keys**.
 
+Then, we call the `register_tortoise` function that'll take care of setting up Tortoise for FastAPI.
+
+While `generate_schemas` is useful for testing purposes, in a real-world application, we should have a proper migration system. See more #TODO
+
+Always make sure call `register_tortoise` at the end of the application file, to ensure everything has been correctly imported.
+
+## Create Objects
+
+> [!Note]
+> The same with `SQLAlchemy`, follow the CRUD order
+
+**`app.py`**
+
+```python
+@app.post("/posts", 
+          response_model=PostPublic, status_code=status.HTTP_201_CREATED)
+async def create_post(post: PostCreate) -> PostPublic:
+    post_tortoise = await PostTortoise.create(**post.dict())
+    await post_tortoise.fetch_related("comments")
+
+	# from_orm available cause we enable orm_mode.
+    return PostPublic.from_orm(post_tortoise) 
+```
+
+> [!Hint] Can we return a `PostTortoise` object directly?
+> Technically, yes, we can. However, doing this would deprive us of all the goodness of using Pydantic models, such as field exclusion or automatic document.
+
+> [!Hint] Dictionary
+> **deprive**
+> _verb_
+> - prevent (a person or place) from having or using something
+
+> [!Question]
+> Tortoise 應該也有 bulk create 之類的東東？
+
+## Getting and Filtering objects
+
+**`app.py`**
+
+```python
+@app.get("/posts")
+async def list_posts(
+    pagination: tuple[int, int] = Depends(pagination)
+) -> list[PostDB]:
+    skip, limit = pagination
+    posts = await PostTortoise.all().offset(skip).limit(limit)
+    
+    results = [PostDB.from_orm(post) for post in posts]
+    
+    return results
+```
+
+Two step, query and transform to Pydantic.
+
+```python
+async def get_post_or_404(id: int) -> PostTortoise:
+    try:
+        return await PostTortoise.get(id=id).prefetch_related("comments")
+    except:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND)
+
+@app.get("/posts/{id}")
+async def get_post(
+    post: PostTortoise = Depends(get_post_or_404)
+) -> PostPublic:
+    return PostPublic.from_orm(post)
+```
+
 > [!Note]
 > Tortoise ORM 的 chain query 仍有 type hint(SQLAlchemy 就沒有), 真不錯
+
+> [!Note]
+> 越來越覺得 Dependency 很神奇，很有當初學 Django 那種各種魔術的感覺。不過 Django 的更多就是了，FastAPI 好像就一套 Dependency 玩到底？讓我們繼續看下去。
+
+## Updating and Deleting Objects
+
+```python
+@app.patch("/posts/{id}", response_model=PostPublic)
+async def update_post(
+    post_update: PostPartialUpdate, 
+    post: PostTortoise = Depends(get_post_or_404),
+) -> PostPublic:
+    post.update_from_dict(post_update.dict(exclude_unset=True))
+    await post.save()
+    
+    return PostPublic.from_orm(post)
+
+@app.delete("/posts/{id}", status_code=status.HTTP_204_NO_CONTENT)
+async def delete_post(post: PostTortoise = Depends(get_post_or_404)):
+    await post.delete()
+```
+
+Here, the main point of attention is that we'll operate directly on the post we want to modify. This is one of the key aspects when working with ORM: entities are objects that can be modified as we wish.
+
+> [!Note]
+> 和 [[Communicating with a SQL database with SQLAlchemy]] 比較就很清楚了。
+
+## Adding Relationships
+
+> [!Note]
+> 我前面記的範例就直接用 relationships 的例子。
+
+**`models.py`**
+
+```python
+class CommentTortoise(Model):
+    id = fields.IntField(pk=True, generated=True)
+    post = fields.ForeignKeyField(
+        "models.PostTortoise", related_name="comments", null=True
+    )
+    publication_date = fields.DatetimeField(null=False)
+    content = fields.TextField(null=False)
+    
+    class Meta:
+        table = "comments"
+```
+
+The main point is the `post` field, notice that we use the `models` prefix; this is the same one we defined in the Tortoise configuration. And we set the `related_name`. This is a typical and convenient feature of ORM. By doing this, we'll be able to get all the comments of a given post simply by accessing its `comments` property.
+
+> [!Note]
+> 必竟是參考 Django。順帶一提，Django 可以自動生成 `[name]_set` 這樣的 related name，而且也不用 `models` 這種前綴，真的很厲害。
+
+
 
 ## Ref
 
