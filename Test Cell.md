@@ -8,6 +8,10 @@ title: Test Cell
 
 # Test Cell
 
+> [!Warning] TODO
+> 要把這些圖片轉謄為表格/文子
+
+
 ![[image (1).png]]
 ![[image (2).png]]
 
@@ -41,3 +45,13 @@ title: Test Cell
 4. pitch: ITO/slit 週期, ITO + Slit = Pitch
 5. DOM: data on mask
 6. DOG: data on glass
+
+## Ball 選擇
+
+1. 通常以「階」為區間，一階為 0.25 um
+2. 5905/2211: Seal 內: 面內: Target = N+2: N+1: N
+3. 九宮格: Seal 內: 面內: Target = N+1: N+1: N
+
+> [!Question]
+> ODF 和 Injection 一樣嗎？
+
