@@ -11,6 +11,7 @@ title: PLM 命名規則
 ## LC
 
 - 包裝 + g(不要空白)
+![[Pasted image 20220617103925.png]]
 
 ## PI
 
