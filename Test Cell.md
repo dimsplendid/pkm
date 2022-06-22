@@ -19,6 +19,11 @@ title: Test Cell
 
 1. VHR 可用 2211(五宮格) 量測 > 但差異性不大
 	> 還是用 TN type(九宮格) 來量測。
+
+> [!Note]
+> 但如果加上 OC/PS 製程，VHR 會有顯註的差異，且 IS 也會不同，之後，IS/VHR 統一用 2211 做並加上 OC/PS 製程
+
+
 2. 2211/5905 良率(ref: 1098-like)
 
 | platform | 產出 | 可量測 | 良率 | TFT        |
@@ -56,3 +61,5 @@ title: Test Cell
 > ODF 和 Injection 一樣嗎？
 
 ## Seal
+
+
