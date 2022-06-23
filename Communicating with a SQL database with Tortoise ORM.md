@@ -162,10 +162,10 @@ async def get_post(
 By default, Tortoise is lazy and doesn't make the additional query. So we need call the `prefetch_related` method on our query.
 
 > [!Note]
-> Tortoise ORM 的 chain query 仍有 type hint(SQLAlchemy 就沒有), 真不錯
+> Tortoise ORM 的 chain query 仍有 type hint(SQLAlchemy 或 Django 就沒有), 真不錯
 
 > [!Note]
-> 越來越覺得 Dependency 很神奇，很有當初學 Django 那種各種魔術的感覺。不過 Django 的更多就是了，FastAPI 好像就一套 Dependency 玩到底？讓我們繼續看下去。
+> 越來越覺得 Dependency 很神奇，很有當初學 Django 那種各種魔術的感覺。不過 Django 的給我的「魔法感」更多就是了，FastAPI 好像就一套 Dependency 玩到底？讓我們繼續看下去。
 
 ## Updating and Deleting Objects
 
