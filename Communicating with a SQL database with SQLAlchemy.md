@@ -199,7 +199,6 @@ class PostPublic(PostDB):
     comments: list[CommentDB]
 ```
 
-```
 
 ## Setting up a Database Migration System with Alembic
 

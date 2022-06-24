@@ -93,7 +93,7 @@ register_tortoise(
 
 Then, we call the `register_tortoise` function that'll take care of setting up Tortoise for FastAPI.
 
-While `generate_schemas` is useful for testing purposes, in a real-world application, we should have a proper migration system. See more #TODO
+While `generate_schemas` is useful for testing purposes, in a real-world application, we should have a proper migration system. See more in the last section #Se
 
 Always make sure call `register_tortoise` at the end of the application file, to ensure everything has been correctly imported.
 
