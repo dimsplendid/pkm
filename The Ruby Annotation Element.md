@@ -24,6 +24,8 @@ would render:
 明日<rt>Ashita</rt>
 </ruby>
 
+用這個方法就可以寫出振假名、注音、和寫作 OO 讀作 XX 了。
+
 > [!Note]
 > 由於 [[markdown]] 可和 HTML 完全相容（或者說標準就是轉成 HTML），所以這也可以用在 markdown 筆記，相當方便。
 
