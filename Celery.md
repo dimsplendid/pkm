@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: python django web 
+tags: python python/django web 
 date created: Monday, May 16th 2022, 12:16:34 am
 date modified: Monday, May 16th 2022, 12:16:34 am
 title: Celery

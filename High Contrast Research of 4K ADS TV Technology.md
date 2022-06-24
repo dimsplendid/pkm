@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: INX SID paper
+tags: INX INX/SID paper
 date created: Monday, May 23rd 2022, 4:10:28 pm
 date modified: Monday, May 23rd 2022, 4:47:31 pm
 title: High Contrast Research of 4K ADS TV Technology

@@ -1,8 +1,8 @@
 ---
 aliases: 
-tags: fastapi python database 
+tags: python/fastapi python database 
 date created: Tuesday, June 7th 2022, 4:53:19 pm
-date modified: Thursday, June 9th 2022, 2:49:55 pm
+date modified: Friday, June 24th 2022, 4:07:11 pm
 title: Communicating with a SQL Database with Tortoise ORM
 ---
 
@@ -51,7 +51,7 @@ class PostBase(BaseModel):
 
 > [!Note]
 > 我發現他這裡的 pydantic model 和 database model 會定義在一個檔案。不過對於更大、更複雜的狀況，應該要如同官網範例上一般拆開。
-	
+
 > [!Question]
 > 1. 現在的 `partialUpdate` 幾乎要重寫整個 model, 應該會有更好的方法？
 > 	- 不過 Pydantic 作為驗證的功能，同一個 ORM 下用不同的 Pydantic model 讀入和回饋看起來不錯呢。讓我再繼續看下去
@@ -88,12 +88,12 @@ register_tortoise(
 )
 ```
 
-- The `connections` key associating a database, following the standard convention format[^2]. In most projects, we'll probably have one database named default, but it allows us to set several databases if needed.
+- The `connections` key associating a database, following the standard convention format.[^2] In most projects, we'll probably have one database named default, but it allows us to set several databases if needed.
 - In the `apps` key, you'll be able to declare all your modules containing your Tortoise models. The first key just below apps, that is, `models`, will be the **prefix** with which you'll be able to refer to the associated models. You can name it how you want, but if you place all your models under the same scope, then `models` is a good candidate. This prefix is especially import when defining **foreign keys**.
 
 Then, we call the `register_tortoise` function that'll take care of setting up Tortoise for FastAPI.
 
-While `generate_schemas` is useful for testing purposes, in a real-world application, we should have a proper migration system. See more in the last section #Se
+While `generate_schemas` is useful for testing purposes, in a real-world application, we should have a proper migration system. See more in the last section: [[#Setting up a Database Migration System with Aerich]]
 
 Always make sure call `register_tortoise` at the end of the application file, to ensure everything has been correctly imported.
 
@@ -126,7 +126,7 @@ async def create_post(post: PostCreate) -> PostPublic:
 > [!Question]
 > Tortoise 應該也有 bulk create 之類的東東？
 
-## Getting and Filtering objects
+## Getting and Filtering Objects
 
 **`app.py`**
 
@@ -242,9 +242,12 @@ class PostPublic(PostDB):
         return list(v)
 ```
 
-Thanks to Tortoise, we can retrieve the comments of a  post by simply doing `post.comments`. This is convenient, but this attribute is not directly a list of data: object into a `PostPublict`, Pydantic will try to parse this query set and fail. However, calling `list` on this query set forces it to output the data. That is the purpose of this validator. Notice that we set it with `pre=True` to make sure it's called before the built-in Pydantic validation.
+Thanks to Tortoise, we can retrieve the comments of a post by simply doing `post.comments`. This is convenient, but this attribute is not directly a list of data: object into a `PostPublict`, Pydantic will try to parse this query set and fail. However, calling `list` on this query set forces it to output the data. That is the purpose of this `validator`. Notice that we set it with `pre=True` to make sure it's called before the built-in Pydantic validation.
+
+## Setting up a Database Migration System with `Aerich`
 
 ## Ref
 
 [^1]: [Tortoise ORM — Tortoise ORM v0.17.3 Documentation (tortoise-orm.readthedocs.io)](https://tortoise-orm.readthedocs.io/en/latest/)
+
 [^2]: [Databases — Tortoise ORM v0.17.3 Documentation (tortoise-orm.readthedocs.io)](https://tortoise-orm.readthedocs.io/en/latest/databases.html?highlight=db_url#db-url)

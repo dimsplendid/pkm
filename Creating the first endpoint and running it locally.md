@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: python fastapi web 
+tags: python python/fastapi web 
 date created: Wednesday, May 18th 2022, 10:42:08 pm
 date modified: Wednesday, May 18th 2022, 10:42:08 pm
 title: Creating the first endpoint and running it locally

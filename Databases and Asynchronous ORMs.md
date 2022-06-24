@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: fastapi python web 
+tags: python/fastapi python web 
 date created: Friday, May 27th 2022, 12:09:04 am
 date modified: Friday, May 27th 2022, 12:09:04 am
 title: Databases and Asynchronous ORMs

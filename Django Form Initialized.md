@@ -1,5 +1,5 @@
 ---
-tags: python, django, web
+tags: python, python/django, web
 date created: Tuesday, April 26th 2022, 11:37:01 pm
 date modified: Wednesday, April 27th 2022, 12:04:43 am
 title: Django Form Initialized

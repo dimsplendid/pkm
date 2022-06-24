@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: django, python, web
+tags: python/django, python, web
 date created: Wednesday, April 27th 2022, 8:54:52 am
 date modified: Wednesday, April 27th 2022, 9:06:43 am
 title: Django Wiki

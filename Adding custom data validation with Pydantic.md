@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: fastapi python web 
+tags: python/fastapi python web 
 date created: Tuesday, May 24th 2022, 1:24:01 pm
 date modified: Tuesday, May 24th 2022, 1:50:03 pm
 title: Adding Custom Data Validation with Pydantic

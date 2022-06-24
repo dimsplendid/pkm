@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: python web fastapi 
+tags: python web python/fastapi 
 date created: Monday, May 16th 2022, 12:25:53 am
 date modified: Wednesday, May 18th 2022, 10:49:41 pm
 title: Developing a RESTful API

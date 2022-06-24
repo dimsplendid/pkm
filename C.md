@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: C
+tags: c
 date created: Friday, April 29th 2022, 10:45:40 am
 date modified: Friday, April 29th 2022, 4:36:36 pm
 title: C

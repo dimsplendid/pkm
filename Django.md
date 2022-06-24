@@ -1,4 +1,4 @@
 ---
-tags: python, django, web
+tags: python, python/django, web
 ---
 # Django

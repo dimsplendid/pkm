@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: C vscode make-life-fantasy 
+tags: c vscode make-life-fantasy 
 date created: Friday, May 13th 2022, 8:42:10 pm
 date modified: Friday, May 13th 2022, 8:42:10 pm
 title: Configuring C debbuger in VS Code

@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: python fastapi web 
+tags: python python/fastapi web 
 date created: Wednesday, May 18th 2022, 10:51:33 pm
 date modified: Friday, May 20th 2022, 4:19:45 pm
 title: Customizing the Response

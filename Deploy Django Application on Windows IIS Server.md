@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: django web python windows deploy
+tags: python/django web windows deploy
 date created: Sunday, May 1st 2022, 10:37:42 pm
 date modified: Sunday, May 1st 2022, 10:37:42 pm
 title: Deploy Django Application on Windows IIS Server

@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: make-life-fantasy 
+tags: make-life-fantasy obsidian markdown 
 date created: Monday, April 25th 2022, 1:09:14 pm
 date modified: Monday, April 25th 2022, 1:09:14 pm
 title: Obsidian (黑曜石)

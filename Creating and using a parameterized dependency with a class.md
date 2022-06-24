@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: fastapi python web 
+tags: python/fastapi python web 
 date created: Thursday, May 26th 2022, 8:33:20 am
 date modified: Thursday, May 26th 2022, 1:03:17 pm
 title: Creating and Using a Parameterized Dependency with a Class

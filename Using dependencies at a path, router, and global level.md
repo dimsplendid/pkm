@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: fastapi python web 
+tags: python/fastapi python web 
 date created: Thursday, May 26th 2022, 1:14:29 pm
 date modified: Thursday, May 26th 2022, 11:54:46 pm
 title: 'Using Dependencies at a Path, Router, and Global Level'

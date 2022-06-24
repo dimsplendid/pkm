@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: fastapi python web data-science
+tags: python/fastapi python web data-science
 date created: Saturday, May 14th 2022, 10:22:42 am
 date modified: Wednesday, June 8th 2022, 3:05:54 pm
 title: FastAPI

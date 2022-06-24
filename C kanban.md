@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: C 
+tags: c 
 
 kanban-plugin: basic
 

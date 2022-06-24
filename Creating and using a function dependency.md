@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: fastapi python web 
+tags: python/fastapi python web 
 date created: Wednesday, May 25th 2022, 4:12:49 pm
 date modified: Wednesday, May 25th 2022, 4:12:49 pm
 title: Creating and using a function dependency

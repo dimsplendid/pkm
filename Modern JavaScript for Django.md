@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: python, django, javascript
+tags: python, python/django, javascript
 date created: Wednesday, April 27th 2022, 9:29:47 am
 date modified: Wednesday, April 27th 2022, 9:31:29 am
 title: Modern JavaScript for Django

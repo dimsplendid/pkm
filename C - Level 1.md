@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: C learn modern-c 
+tags: c learn c/modern-c 
 date created: Monday, May 2nd 2022, 10:25:24 am
 date modified: Monday, May 2nd 2022, 6:02:50 pm
 title: C - Level 1
