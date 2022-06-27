@@ -56,9 +56,7 @@ title: Test Cell
 1. 通常以「階」為區間，一階為 0.25 um
 2. 5905/2211: Seal 內: 面內: Target = N+2: N+1: N
 3. 九宮格: Seal 內: 面內: Target = N+1: N+1: N
-
-> [!Question]
-> ODF 和 Injection 一樣嗎？
+4. ball spacer 使用黏著型(injection 和 ODF 皆是), eg 3 um: EX-003-AC6
 
 ## Seal
 
