@@ -29,3 +29,7 @@ title: test cell VHR SOP
 ## 量測條件
 
 目前統一比較 1 V 0.6 Hz 60° C
+
+## 電壓
+
+Merck 是用 +1 V & -1 V 方波來量 VHR
