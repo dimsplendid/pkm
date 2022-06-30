@@ -34,6 +34,12 @@ title: Test Cell
 > [!Info]
 > 欣達做 PAUV 的 5905 良率也和我的 2211 差不多(同樣也是 PAUV 製程)，可能進出 fab, q-time 甚至 PAUV 製程都有影響
 
+> [!Info]
+> RDL 目前中段好像有 PAUV
+> 賴博架設的樣子，目前只能曝 10x10
+
+
+
 ## Test Cell 使用 PS 暗態依然無趨勢
 
 **Rubbing**
