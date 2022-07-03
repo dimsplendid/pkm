@@ -29,3 +29,9 @@ title: test cell VHR SOP
 ## 量測條件
 
 目前統一比較 1 V 0.6 Hz 60° C
+
+## 電壓
+
+Merck 是用 +1 V & -1 V 方波來量 VHR
+
+TOC 設定 1V 是指 Vpp，offset 設定為 0 的情況就是 ±0.5 V，所以要設定 2V 來量測。
