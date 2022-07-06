@@ -17,8 +17,22 @@ title: Tag
 
 ## Syntax
 
-markdown 並沒有 tag 規範，但這是一個很方便的工具，因
-tag 是文件的屬性
+markdown 並沒有 tag 規範，但這是一個很方便的工具，因此各家有不同的實作方式，Obsidian 是用 `#tag_name`, 而 HackMD 則是 `###### tags: tag_name` 。
+
+但 tag 是文件的屬性，應是如同檔名、資料夾位置等的 [[Meta Data]]；而近年來用於記錄 meta data 的格式中，或許 [[YAML]] 是最為熱門的，格式清楚且簡單，且除了 tag 還可以記錄其它任何想要的屬性。最重要的事 Obsidian, GitHub, HackMD 均有支援，相當不錯。
+
+語法也一致，使用 2 行 `---` 在文件最上方隔開即可：
+
+```markdown
+---
+tags: tag_name
+---
+
+# Title
+
+contents
+
+```
 
 ## Nested Tag
 使用 `/` 即可，非常直觀。
