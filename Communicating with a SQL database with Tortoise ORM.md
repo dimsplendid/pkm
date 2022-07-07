@@ -246,6 +246,34 @@ Thanks to Tortoise, we can retrieve the comments of a post by simply doing `post
 
 ## Setting up a Database Migration System with `Aerich`
 
+**`app.py`**
+
+```python
+
+TORTOISE_ORM = {
+    "connections": {
+        "default": "sqlite:///chapter6_tortoise_relationship.db",
+    },
+    "apps": {
+        "models": {
+            "models": ["tortoise_relationship.models", "aerich.models"],
+            "default_connection": "default",
+        },
+    },
+}
+```
+
+**`bash`**
+
+```bash
+$ aerich init -t app.TORTOISE_ORM
+```
+
+> [!Note]
+> `aerich` can't eat relativity import
+
+In
+
 ## Ref
 
 [^1]: [Tortoise ORM — Tortoise ORM v0.17.3 Documentation (tortoise-orm.readthedocs.io)](https://tortoise-orm.readthedocs.io/en/latest/)
