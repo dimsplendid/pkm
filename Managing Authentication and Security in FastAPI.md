@@ -9,7 +9,7 @@ title: Managing Authentication and Security in FastAPI
 # Managing Authentication and Security in FastAPI
 
 * [[Security dependencies in FastAPI]]
-* Retrieving a user and generating an access token
+* [[Retrieving a user and generating an access token]]
 * Securing API endpoints for authenticated users
 * Securing endpoints with access tokens
 * Configuring CORS and protecting against CSRF attacks
