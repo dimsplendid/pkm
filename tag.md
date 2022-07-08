@@ -38,7 +38,7 @@ contents
 使用 `/` 即可，非常直觀。
 
 ```yaml
-tags: parent/childen
+tags: parent/children
 ```
 
 在 obsidian 裡，搜尋 parent 也會顯示 children，符合使用預期。
