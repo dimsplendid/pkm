@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: INX python experiment toolkits
+tags: python INX/experiment INX/toolkits
 date created: Friday, April 29th 2022, 2:09:44 pm
 date modified: Friday, April 29th 2022, 2:09:50 pm
 title: LC Amount

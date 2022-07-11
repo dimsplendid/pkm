@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: u-shape, rdl, INX
+tags: INX/u-shape, INX/rdl
 date created: Monday, April 25th 2022, 1:18:38 pm
 date modified: Thursday, February 24th 2022, 10:58:08 am
 title: U-shape

@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: test-cell, rdl, INX
+tags: test-cell, INX/rdl
 date created: Monday, April 25th 2022, 1:18:38 pm
 date modified: Wednesday, April 27th 2022, 10:09:14 am
 title: Test Cell
@@ -46,7 +46,7 @@ title: Test Cell
 ![[image (4).png]]
 ![[image (5).png]]
 膜厚不均的影響~信旭沒有要看光學，所以他提供的轉速會比較慢
-所謂的均勻是基板中心點跟四個角段差<0.2um
+所謂的均勻是基板中心點跟四個角段差 < 0.2 um
 
 ## To Understand
 
@@ -66,4 +66,6 @@ title: Test Cell
 
 ## Seal
 
+## LC
 
+ODF 一次通常就需要 20 g
