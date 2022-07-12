@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: python/fastapi python web 
+tags: python/fastapi web 
 date created: Tuesday, May 24th 2022, 10:54:25 pm
 date modified: Wednesday, May 25th 2022, 12:35:30 am
 title: Working with Pydantic Objects

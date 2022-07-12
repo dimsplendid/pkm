@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: python/fastapi python web database 
+tags: python/fastapi web database 
 date created: Friday, May 27th 2022, 9:00:35 am
 date modified: Friday, May 27th 2022, 9:00:50 am
 title: An Overview of Relational and NoSQL Databases

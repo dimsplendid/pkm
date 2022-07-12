@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: python/fastapi python database 
+tags: python/fastapi database 
 date created: Tuesday, June 7th 2022, 4:53:19 pm
 date modified: Friday, June 24th 2022, 4:07:11 pm
 title: Communicating with a SQL Database with Tortoise ORM

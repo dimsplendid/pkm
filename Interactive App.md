@@ -1,5 +1,5 @@
 ---
-tags: python, python/django, javascript, web 
+tags: python/django, javascript, web 
 date created: Thursday, April 28th 2022, 12:04:48 am
 date modified: Thursday, April 28th 2022, 12:22:11 am
 title: Interactive App
