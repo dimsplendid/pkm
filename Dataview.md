@@ -20,9 +20,8 @@ e.g.
 ```dataview
 table 
 	tags, 
-	file.size as size, 
-	date-created as created, 
-	date-modified as modified 
+	file.inlinks,
+	file.outlinks
 limit 5
 ```
 
