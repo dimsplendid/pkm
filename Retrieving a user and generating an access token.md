@@ -2,7 +2,7 @@
 aliases: 
 tags: python/fastapi web security 
 date created: Friday, July 8th 2022, 3:22:49 pm
-date modified: Friday, July 8th 2022, 3:58:52 pm
+date modified: Tuesday, July 12th 2022, 2:50:07 pm
 title: Retrieving a User and Generating an Access Token
 ---
 
@@ -72,13 +72,14 @@ def get_password_hash(password: str) -> str:
 
 `CryptContext` is a very useful class since it allows us to work with different hash algorithms. If, one day, a better algorithm than `bcrypt` emerges, we can just add it to our allowed schemes. New passwords will be hashed using the new algorithm, but existing passwords will still be recognized (and optionally upgraded to the new algorithm).
 
-## Implementing registration routes
+## Implementing Registration Routes
 
 **`app.py`**
 
 ```python
 @app.post("/register", status_code=status.HTTP_201_CREATED)
 async def register(user: UserCreate) -> User:
+	# We shouldhash the password before inserting it into our database
     hashed_password = get_password_hash(user.password)
     
     try:
@@ -93,3 +94,8 @@ async def register(user: UserCreate) -> User:
         
     return User.from_orm(user_tortoise)
 ```
+
+## Retrieving a User and Generating an Access Token
+
+### Implementing a database access token
+
