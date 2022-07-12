@@ -91,11 +91,47 @@ async def register(user: UserCreate) -> User:
             status_code=status.HTTP_400_BAD_REQUEST, 
             detail='Email already exists',
         )
-        
+
+	# return User, not UserDB
     return User.from_orm(user_tortoise)
 ```
 
 ## Retrieving a User and Generating an Access Token
 
+After successful registration, the next step is being able to log in: the user will send their credentials and receive an authentication token to access the API.
+
 ### Implementing a database access token
 
+**`models.py`**
+
+```python
+class AccessToken(BaseModel):
+    user_id: int
+    access_token: str = Field(default_factory=generate_token)
+    expiration_date: datetime = Field(default_factory=get_expiration_date)
+    
+    class Config:
+        orm_mode = True
+```
+
+- `user_id`, which will let us identify the user that corresponds to this token.
+- `access_token`, the string that will be passed in the requests to authenticate them. Notice that we defined the `generate_token` function as the default factory; its a simple function living in `password.py` that generates a random secure passphrase. Under the hood, it relies on the standard `secrets` module.
+- `expiration_date`, which is the date and time when the access token won't be valid anymore. It's always a good idea to make access tokens expire to mitigate the risk if they are stolen. Here, the `get_expiration_date` factory set a default validity of 24 hours
+
+**`models.py`**
+
+```python
+class AccessTokenTortoise(Model):
+    access_token = fields.CharField(pk=True, max_length=255)
+    user = fields.ForeignKeyField('models.UserTortoise', null=False)
+    expiration_date = fields.DatetimeField(null=False)
+    
+    class Meta:
+        table = 'access_tokens'
+```
+
+> [!Hint] Dictionary
+> **mitigate**
+> _verb_
+> 1. make (something bad) less severe, serious, or painful
+> 2. lessen the gravity of (an offence or mistake)

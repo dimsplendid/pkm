@@ -25,10 +25,6 @@ table
 limit 5
 ```
 
-> [!Bug]
-> The meta data key have space can not correctly transfer to `kebab-case`
-
-
 
 ### Querying
 
@@ -36,6 +32,7 @@ limit 5
 ```dataview
 TABLE file.name AS "File", tags, date-created FROM #javascript 
 ```
+
 2. Inline Expression
 	We are on page `= this.file.name`.
 	> Show the file name at preview.
