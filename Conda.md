@@ -18,7 +18,7 @@ conda env export > environment.yml
 - Create environment:
 ```shell
 # new
-conda env create -n env_name python=3.x
+conda create -n env_name python=3.x
 # from environment.yml
 conda env create -f environment.yml
 ```
