@@ -21,5 +21,23 @@ fn add(x: u32, y: u32) -> u32 {
 
 可以重復宣告變數。(Rust 稱之為 shadow)
 
+> [!Hint] Dictionary
+> **insatiable**
+> _adjective_
+> 1. (of an appetite or desire) impossible to satisfy
+> 	"an insatiable hunger for success"
+> 2. (of a person) having an insatiable appetite or desire for something, especially sex.
+> 	"'You're insatiable!' She cried as she pushed him away"
+> 
+> **nudge**
+> _verb_
+> - prod (someone) gently with one's elbow in order to attract attention.
+> 	"people were nudging each other and pointing at me"
+> 
+> _noun_
+> - a light touch or push.
+> 	"he gave her shoulder a nudge"
+
+
 
 
