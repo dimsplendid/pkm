@@ -1,4 +1,5 @@
 > [!Hint] Dictionary
 > **word**
-> _type_
+> *type*
 > 1. definition
+> 	"sentence"
