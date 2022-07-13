@@ -8,4 +8,16 @@ date modified: Wednesday, July 13th 2022, 1:36:50 pm
 
 # Cauchy's Equation
 
+It's a **empirical relationship** between the refractive index and wavelength.
+
+$$
+n(\lambda) = A + \frac{B}{\lambda^2} + \frac{C}{\lambda^4} + ...,
+$$
+
+Usually, it is sufficient to use a two-term form of the equation.
+
+$$
+n(\lambda) = A + \frac{B}{\lambda^2}
+$$
+
 [Contrast ratio - Wikipedia](https://en.wikipedia.org/wiki/Contrast_ratio)
