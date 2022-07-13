@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: python python/fastapi 
+tags: python/fastapi 
 date created: Wednesday, May 18th 2022, 10:48:06 pm
 date modified: Wednesday, May 18th 2022, 10:48:50 pm
 title: Handling Request Parameters

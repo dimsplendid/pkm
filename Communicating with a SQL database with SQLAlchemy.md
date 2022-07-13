@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: python/fastapi python web 
+tags: python/fastapi web 
 date created: Friday, May 27th 2022, 1:45:53 pm
 date modified: Wednesday, June 8th 2022, 2:45:50 pm
 title: Communicating with a SQL Database with SQLAlchemy

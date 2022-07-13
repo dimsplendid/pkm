@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: python, python/django, javascript, web
+tags: python/django, javascript, web
 date created: Wednesday, April 27th 2022, 9:33:44 am
 date modified: Thursday, April 28th 2022, 4:02:38 pm
 title: Organizing Your Front-End Codebase in a Django Project

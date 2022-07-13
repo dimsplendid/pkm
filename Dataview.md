@@ -15,13 +15,13 @@ The interesting [[Obsidian Plugins Recommend|plugins of obsidian]].
 Can use YAML or inline fields(Dataview-specific way to provide metadata using `key:: value`)
 > I would using YAML, cause it's more general(can be use by other editors) and human readable for me
 
+
 e.g.
 ```dataview
 table 
 	tags, 
-	file.size as size, 
-	file.ctime as created, 
-	file.mtime as modified 
+	file.inlinks,
+	file.outlinks
 limit 5
 ```
 
@@ -30,7 +30,7 @@ limit 5
 
 1. Dataview Query Language(DQL)
 ```dataview
-TABLE file.name AS "File", tags, date-created FROM #javascript 
+TABLE file.name AS "File", tags, date-created FROM #python
 ```
 
 2. Inline Expression

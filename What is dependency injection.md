@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: python/fastapi python web 
+tags: python/fastapi web 
 date created: Wednesday, May 25th 2022, 3:26:25 pm
 date modified: Wednesday, May 25th 2022, 3:26:25 pm
 title: What is dependency injection
