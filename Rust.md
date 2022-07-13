@@ -21,3 +21,5 @@ fn add(x: u32, y: u32) -> u32 {
 
 可以重復宣告變數。(Rust 稱之為 shadow)
 
+
+
