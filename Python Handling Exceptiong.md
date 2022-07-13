@@ -1,5 +1,5 @@
 # Python Handling Exceptiong
-#python [[python]]
+#python [[Python]]
 ```python
 try:
 	# Some code need execute.

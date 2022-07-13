@@ -1,6 +1,6 @@
 # remove duplicate legend
 #python 
-[[python]]
+[[Python]]
 ref: https://stackoverflow.com/questions/13588920/stop-matplotlib-repeating-labels-in-legend
 
 `plt.legend` takes as parameters

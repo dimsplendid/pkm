@@ -1,6 +1,6 @@
 # round at any digits
 #python 
-[[python]]
+[[Python]]
 ```python
 import numpy as np
 np.round(num, precision)

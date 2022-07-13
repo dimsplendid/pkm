@@ -3,7 +3,7 @@ date updated: '2021-08-31T20:25:43+08:00'
 
 ---
 
-# [[python]]-Decorator
+# [[Python]]-Decorator
 
 @ in the beggining, 
 ```ad-note

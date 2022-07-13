@@ -8,7 +8,7 @@ title: Conda
 
 # Conda
 
-The simplest way to create [[python]] environment.
+The simplest way to create [[Python]] environment.
 
 - Export environment:
 ```shell
