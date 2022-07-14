@@ -37,6 +37,22 @@ fn add(x: u32, y: u32) -> u32 {
 > _noun_
 > - a light touch or push.
 > 	"he gave her shoulder a nudge"
+>
+> **prevalent**
+> *adjective*
+> - widespread in a particular area or at a particular time.
+> 	"the social ills prevalent in society today"
+> 
+> **deliberate**
+> *adjective*
+> 1. done consiously an intentionally
+> 	"a deliberate attempt to provoke confilict"
+> 2. careful and unhurried
+> 	"a conscientious an  de liberate worker"
+> 
+> *verb*
+> - engage in long and carful consideration
+> 	"she deliberated over the menu"
 
 另外有個想法很有趣。預設的變數都是 immutable，想要改變要在一開始就寫下`mut`。仔細一想，要不斷變動一個變數的值確實比較少。而一但新功能突然修改了就能馬上報錯。雖然其它語言可以用 `const` 達到類似的效果。但是否預設對思考還是有差呢。
 
@@ -66,3 +82,9 @@ println!("The value of x is {x+1}") // wrong
 
 > [!Note]
 > 這時候覺得 python 符號一致性真的利害。
+
+## Statement vs. Expression
+
+1. Statement do not return values.
+2. Expression evaluate to value, and can be part of statement.
+	> 某種程度和 lambda function 有點像唉
