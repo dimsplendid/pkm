@@ -2,7 +2,7 @@
 aliases: 
 tags: python/fastapi web security 
 date created: Friday, July 8th 2022, 3:22:49 pm
-date modified: Tuesday, July 12th 2022, 2:50:07 pm
+date modified: Thursday, July 14th 2022, 2:38:26 pm
 title: Retrieving a User and Generating an Access Token
 ---
 
@@ -100,7 +100,7 @@ async def register(user: UserCreate) -> User:
 
 After successful registration, the next step is being able to log in: the user will send their credentials and receive an authentication token to access the API.
 
-### Implementing a database access token
+### Implementing a Database Access Token
 
 **`models.py`**
 
