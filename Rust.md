@@ -44,5 +44,5 @@ fn add(x: u32, y: u32) -> u32 {
 
 `const` 的命名習慣倒也和 Python 相同：`ALL_UPPERCASE`
 
-
+也有 tuple 呢，
 
