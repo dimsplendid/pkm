@@ -44,5 +44,25 @@ fn add(x: u32, y: u32) -> u32 {
 
 `const` 的命名習慣倒也和 Python 相同：`ALL_UPPERCASE`
 
-也有 tuple 呢，
+也有 tuple 呢，and also support unpack variable, call *distructure*
 
+```rust
+let tup = (500, 6.4, 1);
+let (x, y, z) = tup;
+```
+
+Have format string like python
+
+```rust
+let x = 2
+println!("The value of x is {x}")
+```
+
+But can not calculate at the string, or is it?
+
+```rust
+println!("The value of x is {x+1}") // wrong
+```
+
+> [!Note]
+> 這時候覺得 python 符號一致性真的利害。
