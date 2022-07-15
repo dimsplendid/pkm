@@ -74,7 +74,29 @@ function 和一般變數也是，使用 `snake_case`
 
 ## Data Type
 
-也有 tuple 呢，and also support unpack variable, call *distructure*
+Int, Float 等這些都有，而且用很清楚的 `i32`, `f64` 等標明長度。
+
+| Length  | Signed | Unsigned |
+| ------- | ------ | -------- |
+| 8-bit   | i8     | u8       |
+| 16-bit  | i16    | u16      |
+| 32-bit  | i32    | u32      |
+| 64-bit  | i64    | u64      |
+| 128-bit | i128   | u128     |
+| arch    | isize  | usize    | 
+
+And rust also has tuple just like python, and also support unpack variable, call *distructure*. But can't neglect the parentheses. The tuple can have multiple type, but the array can only have one type. This is pretty make sense and also fit the most usages in python!
+
+> [!Note]
+> 所以不能像 python 那樣如同魔法一般的寫成
+> ```python
+> x, y = y, x
+> ```
+> 但可以這樣，也不錯奇幻了（笑
+> ```rust
+> let (y, x) = (x, y);
+> ```
+
 
 ```rust
 let tup = (500, 6.4, 1);
@@ -97,7 +119,7 @@ println!("The value of x is {x+1}") // wrong
 > [!Note]
 > 這時候覺得 python 符號一致性真的利害。
 
-`String` and `Char` is the same with C, using double quote and single quote separately, 
+`String` and `Char` is the same with C, using double quote and single quote separately. And the encoding is UTF-8.
 
 ## Statement Vs. Expression
 
@@ -105,6 +127,27 @@ println!("The value of x is {x+1}") // wrong
 2. Expression evaluate to value, and can be part of statement.
 	> 某種程度和 lambda function 有點像唉
 3. Expressions do not include ending semicolons
-4. In functions, the last expressions is implicity return
+4. In functions, the last expression are implicitly return.
 
 ## Control Flow
+
+With expression, `if else` can also like ternary operator in C or `if [cond] else` assign in Python.
+
+```rust
+let condition = true;
+let x = if condition { 3 } else { 5 } // The evaluate type should be the same
+```
+
+> [!Hint]
+> Compare to C and Python
+> **C**
+> ```c
+> bool condition = true; // should include <stdbool.h>
+> int x = condition ? 3 : 5;
+> ```
+> **Python**
+> ```python
+> condition = True
+> x = 3 if condition else 5
+> ```
+
