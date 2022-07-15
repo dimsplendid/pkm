@@ -88,3 +88,5 @@ println!("The value of x is {x+1}") // wrong
 1. Statement do not return values.
 2. Expression evaluate to value, and can be part of statement.
 	> 某種程度和 lambda function 有點像唉
+3. Expressions do not include ending semicolons
+4. In functions, the last expressions is implici
