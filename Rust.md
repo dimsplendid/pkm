@@ -151,3 +151,8 @@ let x = if condition { 3 } else { 5 } // The evaluate type should be the same
 > x = 3 if condition else 5
 > ```
 
+## Ownership
+
+> [!Note]
+> 書中以 String 來舉例。這還真是經點。不管是 C 或者多數語言。乃至於許多的攻擊手法，stack overflow or SQL injection，String 都是個破口。
+
