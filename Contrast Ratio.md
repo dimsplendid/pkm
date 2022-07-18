@@ -18,9 +18,9 @@ First, the definition of $W(\lambda)$,
 $$
 W(\lambda) \propto LC\%(\lambda) = \frac{T_{detect}(\lambda)}{T_{bg}(\lambda)}
 $$
-And then, the definition of $B(\lambda)$, which is proportion to scatter index(SI)[^1],
+And then, the definition of $B(\lambda)$, which is mainly cause by leakage light and proportion to [[Scatter Index]](SI)[^1],
 
-
+![[Pasted image 20220718145931.png]]
 
 and we can estimate the trend of refraction index from [[Cauchy's Equation]][^2]
 $$
@@ -41,9 +41,7 @@ CR &\propto \frac{\int_{vis}\frac{T_{detect}(\lambda)}{T_{bg}(\lambda)} d\lambda
 \end{align*}
 $$
 
-暗態和漏光有關，而漏光和 [[Scatter Index]] 相關
-
 ## Reference
 
 [^1]:Utsumi, Yuka, Shintaro Takeda, Hiroyuki Kagawa, Daisuke Kajita, Ikuo Hiyama, Yasushi Tomioka, Toshiki Asakura, et al. “11.2: Improved Contrast Ratio in IPS-Pro LCD TV by Using Quantitative Analysis of Depolarized Light Leakage from Component Materials.” _SID Symposium Digest of Technical Papers_ 39, no. 1 (2008): 129. [https://doi.org/10.1889/1.3069379](https://doi.org/10.1889/1.3069379). [[1.3069379.pdf]]
-[^2]: [Contrast ratio - Wikipedia](https://en.wikipedia.org/wiki/Contrast_ratio)
+[^2]: [Cauchy's equation - Wikipedia](https://en.wikipedia.org/wiki/Cauchy%27s_equation)
