@@ -16,7 +16,7 @@ $$
 
 First, the definition of $W(\lambda)$,
 $$
-W(\lambda) \propto LC\%(\lambda) = \frac{T_{detect}(\lambda)}{T_{bg}(\lambda)}
+\int W(\lambda) d\lambda \propto LC\% = \frac{\int T_{detect}(\lambda) d\lambda}{\int T_{bg}(\lambda)d\lambda}
 $$
 And then, the definition of $B(\lambda)$, which is mainly cause by leakage light and proportion to [[Scatter Index]](SI)[^1],
 
@@ -36,8 +36,8 @@ $$
 So the contrast ratio would be,
 $$
 \begin{align*}
-CR &\propto \frac{\int_{vis}\frac{T_{detect}(\lambda)}{T_{bg}(\lambda)} d\lambda}{\int_{vis} \frac{(n_e(\lambda)^2-n_o(\lambda)^2)^2}{(K_{11}+K_{22}+k_{33})/3} \times d_{cell} d\lambda} \\
-&= \frac{K_{avg}}{d_{cell}}\times\frac{\int_{vis}\frac{T_{detect}(\lambda)}{T_{bg}(\lambda)} d\lambda}{\int_{vis} (n_e(\lambda)^2-n_o(\lambda)^2)^2  d\lambda} \\
+CR &\propto \frac{\int_{vis}W(\lambda) d\lambda}{\int_{vis} \frac{(n_e(\lambda)^2-n_o(\lambda)^2)^2}{(K_{11}+K_{22}+k_{33})/3} \times d_{cell} d\lambda} \\
+&= \frac{K_{avg}}{d_{cell}}\times\frac{LC\%}{\int_{vis} (n_e(\lambda)^2-n_o(\lambda)^2)^2  d\lambda} \\
 \end{align*}
 $$
 
