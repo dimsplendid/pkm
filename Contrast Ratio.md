@@ -16,8 +16,8 @@ $$
 
 First, the definition of $W(\lambda)$,
 $$
-\int W(\lambda) d\lambda \propto LC\% = \frac{\int T_{detect}(\lambda) d\lambda}{\int T_{bg}(\lambda)d\lambda}
-$$
+\int W(\lambda) d\lambda \propto LC\% = \frac{\int T_{detect}(\lambda) d\lambda}{\int T_{BLU}(\lambda)d\lambda}
+$$![[toc_transmittance_measurement_example.png]]
 And then, the definition of $B(\lambda)$, which is mainly cause by leakage light and proportion to [[Scatter Index]](SI)[^1],
 
 ![[Pasted image 20220718145931.png]]
