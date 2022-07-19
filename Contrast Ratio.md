@@ -40,7 +40,7 @@ $$
 So the contrast ratio would be,
 $$
 \begin{align*}
-CR &\propto \frac{\int_{vis}W(\lambda) d\lambda}{\int_{vis} \frac{(n_e(\lambda)^2-n_o(\lambda)^2)^2}{(K_{11}+K_{22}+k_{33})/3} \times d_{cell} d\lambda} \\
+CR &\propto \frac{\int_{vis}W(\lambda) d\lambda}{\int_{vis} \frac{(n_e(\lambda)^2-n_o(\lambda)^2)^2}{(K_{11}+K_{22}+k_{33})/3} \times d_{cell} \times BLU(\lambda)d\lambda} \\
 &= \frac{K_{avg}}{d_{cell}}\times\frac{LC\%}{\int_{vis} (n_e(\lambda)^2-n_o(\lambda)^2)^2  \times BLU(\lambda)d\lambda} ,
 \end{align*}
 $$
