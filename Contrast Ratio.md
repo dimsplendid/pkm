@@ -33,6 +33,10 @@ B(\lambda) \propto SI(\lambda) &= \frac{(n_e(\lambda)^2-n_o(\lambda)^2)^2}{(K_{1
 \end{align*}
 $$
 
+> [!Note]
+> Two wavelength fitting is good enough
+> ![[Pasted image 20220719103553.png]]
+
 So the contrast ratio would be,
 $$
 \begin{align*}
