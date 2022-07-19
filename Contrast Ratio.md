@@ -35,7 +35,7 @@ $$
 
 > [!Note]
 > Two wavelength fitting is good enough
-> ![[Pasted image 20220719103553.png]]
+> ![[cauchy_eq_check.png]]
 
 So the contrast ratio would be,
 $$
