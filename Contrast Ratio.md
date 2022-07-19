@@ -42,13 +42,13 @@ $$
 \begin{align*}
 CR &\propto \frac{\int_{vis}W(\lambda) d\lambda}{\int_{vis} \frac{(n_e(\lambda)^2-n_o(\lambda)^2)^2}{(K_{11}+K_{22}+k_{33})/3} \times d_{cell} d\lambda} \\
 &= \frac{K_{avg}}{d_{cell}}\times\frac{LC\%}{\int_{vis} (n_e(\lambda)^2-n_o(\lambda)^2)^2  d\lambda} \\
-&=\frac{K_{avg}}{d_{cell}}\times\frac{LC\%}{SI(\lambda)|^{\lambda=780}_{\lambda=380}},
+&=\frac{K_{avg}}{d_{cell}}\times\frac{LC\%}{F(\lambda)|^{\lambda=780}_{\lambda=380}},
 \end{align*}
 $$
-which $SI(\lambda)$ is,
+which $F(\lambda)$ is,
 $$
 \begin{align*}
-SI(\lambda) &\sim \lambda(A_e^2-A_o^2)^2\\
+F(\lambda) &\sim \lambda(A_e^2-A_o^2)^2\\
 &- \frac{4(A_e^2-A_o^2)(A_eB_e-A_oB_o)}{\lambda}\\
 &+ \frac{2A_e^2(B_o^2-3B_e^2)+2A_o^2(B_e^2-3B_o^2)+8A_eB_eA_oB_o}{3\lambda^3}\\
 &-\frac{4(B_e^2-B_o^2)(A_eB_e-A_oB_o)}{5\lambda^5}\\
