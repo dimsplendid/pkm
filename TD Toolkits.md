@@ -1,12 +1,26 @@
 ---
 aliases: 
-tags: INX python
 date created: Thursday, June 23rd 2022, 5:48:24 pm
-date modified: Wednesday, June 29th 2022, 9:27:10 am
+date modified: Sunday, July 17th 2022, 3:05:17 pm
+tags: INX/toolkits  python
 title: TD Toolkits
 ---
 
 # TD Toolkits
+
+## Install
+
+> [!Hint]
+> Recommend using `conda`
+
+> [!Note]
+> I would try to pack to docker img later
+
+```bash
+$ conda create python=3.8 -n td_toolkits_v3
+$ conda activate td_toolkits_v3
+$ pip install -r requirements/local.txt # for devlopement
+```
 
 ## Start up
 
