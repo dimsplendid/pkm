@@ -1,8 +1,8 @@
 ---
 aliases: 
-tags: rust, learn 
 date created: Tuesday, June 7th 2022, 2:19:03 pm
-date modified: Friday, July 15th 2022, 4:09:38 pm
+date modified: Wednesday, July 20th 2022, 11:16:32 pm
+tags: rust, learn 
 title: Rust
 ---
 
@@ -13,6 +13,7 @@ title: Rust
 ## Type Annotating
 
 和 [[Python]] 同樣有 type hint(annotating) 與 type inference。而且寫法也很像。
+
 但 Rust 的 type annotation 要強製寫就是了。
 
 ```rust
@@ -70,6 +71,7 @@ let x = "Five";
 ## Naming Convention
 
 `const` 的命名習慣倒也和 Python 相同：`ALL_UPPERCASE`
+
 function 和一般變數也是，使用 `snake_case`
 
 ## Data Type
@@ -83,9 +85,9 @@ Int, Float 等這些都有，而且用很清楚的 `i32`, `f64` 等標明長度�
 | 32-bit  | i32    | u32      |
 | 64-bit  | i64    | u64      |
 | 128-bit | i128   | u128     |
-| arch    | isize  | usize    | 
+| arch    | isize  | usize    |
 
-And rust also has tuple just like python, and also support unpack variable, call *distructure*. But can't neglect the parentheses. The tuple can have multiple type, but the array can only have one type. This is pretty make sense and also fit the most usages in python!
+And rust also has **tuple** just like python, and also support unpack variable, call *distructure*. But can't neglect the parentheses. The tuple can have multiple type, but the array can only have one type. This is pretty make sense and also fit the most usages in python!
 
 > [!Note]
 > 所以不能像 python 那樣如同魔法一般的寫成
@@ -96,6 +98,7 @@ And rust also has tuple just like python, and also support unpack variable, call
 > ```rust
 > let (y, x) = (x, y);
 > ```
+> 且同樣也可以用 tuple 的方式 return 多個值。
 
 
 ```rust
@@ -155,5 +158,24 @@ let x = if condition { 3 } else { 5 } // The evaluate type should be the same
 
 > [!Note]
 > 書中以 String 來舉例。這還真是經典。不管是 C 或者多數語言。乃至於許多的攻擊手法，stack overflow or SQL injection，String 都是個破口。
+```console
+2 |     let s1 = String::from("hello");
+  |         -- move occurs because `s1` has type `String`, which does not implement the `Copy` trait
+3 |     let s2 = s1;
+  |              -- value moved here
+4 | 
+5 |     println!("{}, world!", s1);
+  |                            ^^ value borrowed here after move
+```
 
+The heap value like string would **move** the owner when assign or transfer to function. And **drop** as leaving the scope. Using this system, Rust can manage memory allocation and free very well. If we need to keep the ownership, need using `clone` method.
+
+```rust
+    let s1 = String::from("hello");
+    let s2 = s1.clone();
+
+    println!("s1 = {}, s2 = {}", s1, s2);
+```
+
+## References and Borrowing
 
