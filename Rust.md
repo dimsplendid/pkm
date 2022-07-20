@@ -179,3 +179,5 @@ The heap value like string would **move** the owner when assign or transfer to f
 
 ## References and Borrowing
 
+If we don't want to take the ownership, we can use reference, just like a pointer, but guaranteed to point to a valid value.
+
