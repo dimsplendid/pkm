@@ -192,3 +192,9 @@ Mutable and immutable reference also can't refer the same value at the same time
 
 ## Slice Type
 
+Using rust range syntax `..` to get the slice of string.
+
+```rust
+let s = String::from("Hello world");
+let world = &s[6..11]
+```
