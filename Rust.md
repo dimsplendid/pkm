@@ -181,3 +181,11 @@ The heap value like string would **move** the owner when assign or transfer to f
 
 If we don't want to take the ownership, we can use reference, just like a pointer, but guaranteed to point to a valid value.
 
+> [!Hint]
+> `&`: reference operator
+> `*`: dereference operator
+> very similar to `C`, in `C`, they call **address of** and **value of** or **point to**
+
+And the reference is also immutable by default, need to add `mut` if we want to change the reference value. Unlike immutable reference, mutable reference can only assign once(borrow) at the same time(in the same scope).
+
+Mutable and immutable reference also can't refer the same value at the same time, to prevent the immutable reference **read** data changing.
