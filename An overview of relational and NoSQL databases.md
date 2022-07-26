@@ -29,7 +29,7 @@ We should carefully design a relational schema and its query.
 
 All database engines that are not relational fall back into the NoSQL category. But there are many kinds of them:
 
-- key-value stores: Redis
+- key-value stores: [[Redis]]
 - graph databases: Neo4j
 - document-oriented database: MongoDB
 
