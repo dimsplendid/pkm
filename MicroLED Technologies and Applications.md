@@ -3,7 +3,7 @@ aliases:
 tags: INX LED 
 title: 'MicroLED Technologies and Applications: Characteristics, Fabrication, Progress, and Challenges'
 date created: Thursday, July 28th 2022, 1:20:06 pm
-date modified: Thursday, July 28th 2022, 4:36:13 pm
+date modified: Thursday, July 28th 2022, 8:10:22 pm
 ---
 
 # MicroLED Technologies and Applications: Characteristics, Fabrication, Progress, and Challenges
@@ -42,8 +42,6 @@ MircroLED can have two orders of magnitude brighter than LCD (have polarizer, CF
 
 And microLED can reach very high PPI, ten times higher than OLED and LCD. The PPI of LCD is low due to its mechanism. And the nature of OLED materials makes it incompatible with conventional microfabrication processes.
 
-![[Pasted image 20220728164914.png]]
-
 Concerning reliability and environmental stability, $AlInGaN$ and $AlInGaP$ are grown at high temperatures. As a result, they are very stable at room temperature and can operate in a broader temperature range of −100 °C–120 °C. In the other hand, OLED need complex encapsulation process and increase the cost.
 
 Due to the development of [[Visible Light Communication]](VLC) and the high [[electron mobility]], the response time is in order of nanosecond.
@@ -52,6 +50,15 @@ Although the initial movement of microLED is higher efficient compare to OLED an
 
 > [!Question]
 > What's the definition of EQE?
+
+### Application of MicroLED
+
+![[Pasted image 20220728164914.png]]
+
+Interestingly, the two most significant challenges in microLED application, namely EQE and mass transfer defects, can be far less difficult in HMD, HUD, and projector. The reason are:
+
+1. High current density to get higher brightness, and this reduce the sidewall effect.
+2. The panel is smaller and easier for mass transfer.
 
 
 
@@ -89,6 +96,8 @@ Although the initial movement of microLED is higher efficient compare to OLED an
 2. Stretchable
 
 ## 和現有 LCD 的連結
+
+1. T6 VR case PPI 要到 1400+
 
 ## 材料要如何下手
 
