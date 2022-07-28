@@ -21,7 +21,7 @@ The note of the review paper[^1]
 	2. $AlInGaP$ red LED
 	3. Usage: backlight, signal, outdoor displaying, curing, etc.
 2. mini-LED: 100~200 um
-	1. Usage: high-end displays, high-dynamic-rang([[HDR]]) display, flexible display
+	1. Usage: high-end displays, [[High Dynamic Range]] (HDR) display, flexible display
 3. microLED: < 50 um
 	1. $InGaN$
 	2. Usage: all, including AR/VR
@@ -38,13 +38,20 @@ The note of the review paper[^1]
 
 ![[Pasted image 20220728163824.png]]
 
-MircroLED can have two orders of magnitude brighter than LCD (have polarizer, CF, etc.) and OLED (would burn out at 10000 nits in a few second). And this is also significant to Ambient contrast ratio(ACR).
+MircroLED can have two orders of magnitude brighter than LCD (have polarizer, CF, etc.) and OLED (would burn out at 10000 nits in a few second). And this is also significant to [[Ambient Contrast Ratio]](ACR).
 
 And microLED can reach very high PPI, ten times higher than OLED and LCD. The PPI of LCD is low due to its mechanism. And the nature of OLED materials makes it incompatible with conventional microfabrication processes.
 
 ![[Pasted image 20220728164914.png]]
 
-Concerning reliability and environmental stability, $AlInGaN$ and $AlInGaP$ are grown at high temperatures. As a result, they are very stable at room temperature and can operate in a broader temperature range of −100 °C–120 °C.
+Concerning reliability and environmental stability, $AlInGaN$ and $AlInGaP$ are grown at high temperatures. As a result, they are very stable at room temperature and can operate in a broader temperature range of −100 °C–120 °C. In the other hand, OLED need complex encapsulation process and increase the cost.
+
+Due to the development of [[Visible Light Communication]](VLC) and the high [[electron mobility]], the response time is in order of nanosecond.
+
+Although the initial movement of microLED is higher efficient compare to OLED and LCD, today's microLED are still power consumption due to the [[Sidewall Defect Effect]].
+
+> [!Question]
+> What's the definition of EQE?
 
 
 
