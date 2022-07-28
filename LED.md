@@ -40,3 +40,5 @@ date modified: Thursday, July 28th 2022, 1:20:17 pm
 
 1. Flexible
 2. Stretchable
+
+## 和現有 LCD 的連結
