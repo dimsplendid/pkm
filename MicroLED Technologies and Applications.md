@@ -77,6 +77,16 @@ Also, microLED can use to [[Visible Light Communication|VLC]].
 
 ### Challenges
 
+1. [[#Mass Transfer]]
+2. Low Efficiency of a Tiny Chip
+3. Systematic Design of Structures and Processes for each Component of the Display System
+
+#### Mass Transfer
+
+1. pick-and-place -> large, low density displays
+2. direct wafer-scale (monolithic integration) -> near-eye displays
+
+
 ## 原理
 
 ## 顯示
