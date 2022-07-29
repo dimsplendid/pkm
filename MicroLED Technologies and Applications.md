@@ -3,7 +3,7 @@ aliases:
 tags: INX microLED 
 title: 'MicroLED Technologies and Applications: Characteristics, Fabrication, Progress, and Challenges'
 date created: Thursday, July 28th 2022, 1:20:06 pm
-date modified: Thursday, July 28th 2022, 8:10:22 pm
+date modified: Friday, July 29th 2022, 4:07:58 pm
 ---
 
 # MicroLED Technologies and Applications: Characteristics, Fabrication, Progress, and Challenges
@@ -69,7 +69,7 @@ Tiny microLEDs can be bonded to flexible or stretchable substrates to make speci
 
 ![[Pasted image 20220729093003.png]]
 
-EI-Alpaslan et al demonstrated the light field display[^3].
+EI-Alpaslan et al demonstrated the light field display.[^3]
 
 ![[Pasted image 20220729093524.png]]
 
@@ -78,8 +78,9 @@ Also, microLED can use to [[Visible Light Communication|VLC]].
 ### Challenges
 
 1. [[#Mass Transfer]]
-2. Low Efficiency of a Tiny Chip
-3. Systematic Design of Structures and Processes for each Component of the Display System
+2. [[#Reduced EQE with a Shrunken Chip Size]]
+3. [[#Structure and Process Design From a System Perspective]]
+4. [[#Defects Management]]
 
 #### Mass Transfer
 
@@ -89,6 +90,52 @@ Also, microLED can use to [[Visible Light Communication|VLC]].
 
 > [!Question]
 > 上次好像有看到有在做一次做三個顏色的？
+
+#### Reduced EQE with a Shrunken Chip Size
+
+The EQE of blue 5-10 um microLED is usually $\le 20\%$. At such a level, microLED cannot achieve the critical promise of better efficencey than LCD and OLED.
+
+Due to small chip dimensions and low applied current in large displays, microLED operation is impacted by severe sidewall effects related to defects such as dangling bonds, contaminations, or structural damages in which nonradiative carrier recombination dominates.
+
+> [!Hint] Dictionary
+> **contamination**
+> *noun*
+> 1. the action or state of making or being made impure by polluting or poisoning.
+> 	"the risk of contamination by dangerous bacteria"
+
+These defects mainly come from the mesa etch.
+
+#### Structure and Process Design From a System Perspective
+
+![[Pasted image 20220729140140.png]]
+
+Some backend tech need suitable frontend tech. Need to design the process based on final product. e.g.
+
+- VR: $InGaN$ RGB wafer on $Si$ substrates, vertical thin film chip, direct wafer-to-wafer transfer onto a CMOS backplane.
+
+#### Defects Management
+
+Current displays are almost defect-free. To reach the same level, the defect management should be designed from a system perspective.
+
+1. The low-defect processes elect in each step of the long manufacturing chain.
+2. New test methods develop in each key process, especially in wafer manufacturing. Such as high-speed contactless inspection.
+3. Panel defect manage, such as repair.
+
+#### How to Realize Red Emission
+
+High-efficiency $InGaN$ blue LED with an EQE of 84.3% and $AlInGaP$ red LED with EQE of 55% have been demonstrated. But the efficiency of $AlInGaP$ drop very fast as pixel size shrink.
+
+The lower carrier diffusion and larger surface recombination rate make the sidewall effect of $AlInGaP$ red microLED much severer than $InGaN$.
+
+Both color also shift when temperature change, the $InGaN$ is a more stable one.
+
+Another way is to convert blue to green and red. LED + QD
+
+> [!Note]
+> 看這一篇真的有種看技能樹的感覺，或許可以用類似的方式來說明？
+
+## Epitaxial Growth for MicroLED
+
 
 
 ## 原理
@@ -131,8 +178,11 @@ Also, microLED can use to [[Visible Light Communication|VLC]].
 ## 材料要如何下手
 
 ![[Pasted image 20220630152549.png]]
+
 ## Reference
 
 [^1]: [[Zhenetal_MicroLEDtechnologiesandapplications_characteristicsfabricationprogressandchallenges_JournalofPhysD_ApplPhys_TopicalReview_2021.pdf|MicroLED technologies and applications: characteristics, fabrication, progress, and challenges]]
+
 [^2]: [[science.1175690.pdf|Printed Assemblies of Inorganic Light-Emitting Diodes for Deformable and Semitransparent Displays]]
+
 [^3]: [[12.2083436.pdf|Small Form Factor Full Parallax Tiled Light Field Display]]
