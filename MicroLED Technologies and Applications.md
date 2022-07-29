@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: INX LED 
+tags: INX microLED 
 title: 'MicroLED Technologies and Applications: Characteristics, Fabrication, Progress, and Challenges'
 date created: Thursday, July 28th 2022, 1:20:06 pm
 date modified: Thursday, July 28th 2022, 8:10:22 pm
@@ -57,10 +57,25 @@ Although the initial movement of microLED is higher efficient compare to OLED an
 
 Interestingly, the two most significant challenges in microLED application, namely EQE and mass transfer defects, can be far less difficult in HMD, HUD, and projector. The reason are:
 
-1. High current density to get higher brightness, and this reduce the sidewall effect.
+1. High current density to get higher brightness, and this reduces the sidewall effect.
 2. The panel is smaller and easier for mass transfer.
 
+Based on the above reason, the product strategy is to develop high PPI applications. And low PPI can become the next generation.
 
+> [!Note]
+> I think this is what INX did, right?
+
+Tiny microLEDs can be bonded to flexible or stretchable substrates to make special displays[^2]
+
+![[Pasted image 20220729093003.png]]
+
+EI-Alpaslan et al demonstrated the light field display[^3].
+
+![[Pasted image 20220729093524.png]]
+
+Also, microLED can use to [[Visible Light Communication|VLC]].
+
+### Challenges
 
 ## 原理
 
@@ -101,6 +116,9 @@ Interestingly, the two most significant challenges in microLED application, name
 
 ## 材料要如何下手
 
+![[Pasted image 20220630152549.png]]
 ## Reference
 
-[1]: [[Zhenetal_MicroLEDtechnologiesandapplications_characteristicsfabricationprogressandchallenges_JournalofPhysD_ApplPhys_TopicalReview_2021.pdf|MicroLED technologies and applications: characteristics, fabrication, progress, and challenges]]
+[^1]: [[Zhenetal_MicroLEDtechnologiesandapplications_characteristicsfabricationprogressandchallenges_JournalofPhysD_ApplPhys_TopicalReview_2021.pdf|MicroLED technologies and applications: characteristics, fabrication, progress, and challenges]]
+[^2]: [[science.1175690.pdf|Printed Assemblies of Inorganic Light-Emitting Diodes for Deformable and Semitransparent Displays]]
+[^3]: [[12.2083436.pdf|Small Form Factor Full Parallax Tiled Light Field Display]]
