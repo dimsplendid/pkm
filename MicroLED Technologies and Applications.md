@@ -85,6 +85,10 @@ Also, microLED can use to [[Visible Light Communication|VLC]].
 
 1. pick-and-place -> large, low density displays
 2. direct wafer-scale (monolithic integration) -> near-eye displays
+	> To date they can only produce monochrome displays, need assemble with QD and CF
+
+> [!Question]
+> 上次好像有看到有在做一次做三個顏色的？
 
 
 ## 原理
