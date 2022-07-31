@@ -184,6 +184,8 @@ async def create_access_token(user: UserDB) -> AccessToken:
 
 ## Securing Endpoints with Access Tokens
 
+Here, we retrieve a token from a request header, but then, we'll have to check the database to see if it's valid.
+
 **`app.py`**
 
 ```python
