@@ -135,3 +135,24 @@ class AccessTokenTortoise(Model):
 > _verb_
 > 1. make (something bad) less severe, serious, or painful
 > 2. lessen the gravity of (an offence or mistake)
+
+### Implementing a Login Endpoint
+
+**`app.py`**
+
+```python
+@app.post("/token")
+async def create_token(
+    form_data: OAuth2PasswordRequestForm = Depends(OAuth2PasswordRequestForm)
+):
+    email = form_data.username
+    password = form_data.password
+    user = await authenticate(email, password)
+    
+    if not user:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED)
+    
+    token = await create_access_token(user)
+    
+    return {'access_token': token.access_token, 'token_type': 'bearer'}
+```
