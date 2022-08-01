@@ -1,7 +1,7 @@
 ---
 aliases: 
 date created: Friday, July 8th 2022, 3:22:49 pm
-date modified: Monday, August 1st 2022, 10:27:19 am
+date modified: Monday, August 1st 2022, 11:44:26 am
 tags: python/fastapi web security 
 title: Retrieving a User and Generating an Access Token
 ---
@@ -218,4 +218,10 @@ The patterns we showed here are good candidates for a REST API, which is called 
 ## Configuring CORS and Protecting Against CSRF Attacks
 
 While `Authorization` header, as we've seen so far, could work, there is a better way to handle authentication when working in browsers: **cookies!**
+
+However, this comes with some security challenges. Websites are very common targets for hackers and lots of attacks have emerged over the years.
+
+One of the most typical is **Cross-Site Request forgery(CSRF)**. In the scenario, an attacker on another website tries to trick a user who is currently authenticated with your application to perform a request on your server. Since browsers tend to send cookies with every request, your server wouldn't be able to tell that the request was actually forged.
+
+### Understanding CORS and Configuring it in FastAPI
 
