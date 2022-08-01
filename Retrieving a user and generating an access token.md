@@ -1,8 +1,8 @@
 ---
 aliases: 
-tags: python/fastapi web security 
 date created: Friday, July 8th 2022, 3:22:49 pm
-date modified: Thursday, July 14th 2022, 2:38:26 pm
+date modified: Sunday, July 31st 2022, 11:56:15 pm
+tags: python/fastapi web security 
 title: Retrieving a User and Generating an Access Token
 ---
 
@@ -135,3 +135,68 @@ class AccessTokenTortoise(Model):
 > _verb_
 > 1. make (something bad) less severe, serious, or painful
 > 2. lessen the gravity of (an offence or mistake)
+
+### Implementing a Login Endpoint
+
+**`app.py`**
+
+```python
+@app.post("/token")
+async def create_token(
+    form_data: OAuth2PasswordRequestForm = Depends(OAuth2PasswordRequestForm)
+):
+    email = form_data.username
+    password = form_data.password
+    user = await authenticate(email, password)
+    
+    if not user:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED)
+    
+    token = await create_access_token(user)
+    
+    return {'access_token': token.access_token, 'token_type': 'bearer'}
+```
+
+Using the dependency, we don't need to implement the OAuth2 protocol ourselves.
+
+**`authentication.py`**
+
+```python
+async def authenticate(email: str, password: str) -> UserDB | None:
+    try:
+        user = await UserTortoise.get(email=email)
+    except DoesNotExist:
+        return None
+    
+    if not verify_password(password, user.hashed_password):
+        return None
+    
+    return UserDB.from_orm(user)
+
+async def create_access_token(user: UserDB) -> AccessToken:
+    access_token = AccessToken(user_id=user.id)
+    access_token_tortoise = await AccessTokenTortoise.create(
+        **access_token.dict()
+    )
+    
+    return AccessToken.from_orm(access_token_tortoise)
+```
+
+## Securing Endpoints with Access Tokens
+
+Here, we retrieve a token from a request header, but then, we'll have to check the database to see if it's valid.
+
+**`app.py`**
+
+```python
+async def get_current_user(
+    token: str = Depends(OAuth2PasswordBearer(tokenUrl='/token')),
+) -> UserTortoise:
+    try:
+        access_token: AccessTokenTortoise = await AccessTokenTortoise.get(
+            access_token=token, expiration_date__gte=timezone.now()
+        ).prefetch_related('user')
+        return cast(UserTortoise, access_token.user)
+    except DoesNotExist:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED)
+```
