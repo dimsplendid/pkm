@@ -1,7 +1,7 @@
 ---
 aliases: 
 date created: Friday, July 8th 2022, 3:22:49 pm
-date modified: Sunday, July 31st 2022, 11:56:15 pm
+date modified: Monday, August 1st 2022, 10:27:19 am
 tags: python/fastapi web security 
 title: Retrieving a User and Generating an Access Token
 ---
@@ -200,3 +200,22 @@ async def get_current_user(
     except DoesNotExist:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED)
 ```
+
+The `OAuth2PasswordBearer` dependency goes hand in hand with `OAuth2PasswordRequestForm` in [[#Implementing a Login Endpoint|previous section]]. It not only checks for the access token in the `Authorization` header, but it also informs the OpenAPI schema that the endpoint to get a fresh token is `/token`.
+
+As the authentication system is complete, we can protect our endpoints simply by injecting this dependency.
+
+**`app.py`**
+
+```python
+@app.get("/protected-route", response_model=User)
+async def proteced_route(user: UserDB = Depends(get_current_user)):
+    return User.from_orm(user)
+```
+
+The patterns we showed here are good candidates for a REST API, which is called externally by other client programs. However, you may wish to call your API from a very common piece of software: the browser. In this case, there are some additional security considerations to take care of.
+
+## Configuring CORS and Protecting Against CSRF Attacks
+
+While `Authorization` header, as we've seen so far, could work, there is a better way to handle authentication when working in browsers: **cookies!**
+
