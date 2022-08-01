@@ -36,7 +36,7 @@ title: FastAPI
 
 6. [[Databases and Asynchronous ORMs]]
 7. [[Managing Authentication and Security in FastAPI]]
-8. Defining WebSockets for Two-Way Interactive Communication in FastAPI
+8. [[Defining WebSockets for Two-Way Interactive Communication in FastAPI]]
 9. [[Testing an API Asynchronously with pytest and HTTPX]]
 10. Deploying a FastAPI Project
 
