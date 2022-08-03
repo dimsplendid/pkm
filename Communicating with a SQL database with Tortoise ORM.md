@@ -267,12 +267,15 @@ TORTOISE_ORM = {
 
 ```bash
 $ aerich init -t app.TORTOISE_ORM
+$ aerich init-db
+$ aerich migrate --name added_new_table # make migrations
+$ aerich upgrade # migrate
 ```
 
 > [!Note]
 > `aerich` can't eat relativity import like `.model`, and need to care about the path. I think this would be very easy when using template to generate project just like Django. But still need to know so I can build from scratch.
 
-In
+
 
 ## Ref
 

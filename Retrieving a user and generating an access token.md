@@ -1,106 +1,16 @@
 ---
 aliases: 
-tags: python/fastapi web security 
 date created: Friday, July 8th 2022, 3:22:49 pm
-date modified: Thursday, July 14th 2022, 2:38:26 pm
+date modified: Monday, August 1st 2022, 10:28:19 pm
+tags: python/fastapi web security
 title: Retrieving a User and Generating an Access Token
 ---
 
 # Retrieving a User and Generating an Access Token
 
-## Creating Models and Tables
-
-**`models.py`**
-
-```python
-class UserBase(BaseModel):
-    email: EmailStr
-    
-    class Config:
-        orm_mode = True
-        
-
-class UserCreate(UserBase):
-    password: str
-    
-
-class User(UserBase):
-    id: int
-    
-
-class UserDB(User):
-    hashed_password: str
-```
-
-See the different between `UserCreate` and `UserDB`.
-
-And the corresponding Tortoise models:
-
-**`models.py`**
-
-```python
-class UserTortoise(Model):
-    id = fields.IntField(pk=True, generated=True)
-    email = fields.CharField(
-        index=True, unique=True, null=False, max_length=255)
-    hashed_password = fields.CharField(null=False, max_length=255)
-    
-    class Meta:
-        table = "users"
-```
-
-> [!Danger]
-> Don't store password as plain text
-
-> [!Question]
-> Maybe I can use singular and plural name to separate the Pydantic and ORM models? e.g. user vs users, product vs products. Is these clear enough?
-
-## Hashing Passwords
-
-```bash
-$ pip install passlib[bcrypt]
-```
-
-```python
-from passlib.context import CryptContext
-
-pwd_context = CryptContext(schemes=['bcrypt'], deprecated='auto')
-
-def get_password_hash(password: str) -> str:
-    return pwd_context.hash(password)
-```
-
-`CryptContext` is a very useful class since it allows us to work with different hash algorithms. If, one day, a better algorithm than `bcrypt` emerges, we can just add it to our allowed schemes. New passwords will be hashed using the new algorithm, but existing passwords will still be recognized (and optionally upgraded to the new algorithm).
-
-## Implementing Registration Routes
-
-**`app.py`**
-
-```python
-@app.post("/register", status_code=status.HTTP_201_CREATED)
-async def register(user: UserCreate) -> User:
-	# We shouldhash the password before inserting it into our database
-    hashed_password = get_password_hash(user.password)
-    
-    try:
-        user_tortoise = await UserTortoise.create(
-            **user.dict(), hashed_password=hashed_password
-        )
-    except IntegrityError:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST, 
-            detail='Email already exists',
-        )
-
-	# return User, not UserDB
-    return User.from_orm(user_tortoise)
-```
-
-## Retrieving a User and Generating an Access Token
-
 After successful registration, the next step is being able to log in: the user will send their credentials and receive an authentication token to access the API.
 
-### Implementing a Database Access Token
+## Implementing a Database Access Token
 
 **`models.py`**
 
@@ -135,3 +45,49 @@ class AccessTokenTortoise(Model):
 > _verb_
 > 1. make (something bad) less severe, serious, or painful
 > 2. lessen the gravity of (an offence or mistake)
+
+## Implementing a Login Endpoint
+
+**`app.py`**
+
+```python
+@app.post("/token")
+async def create_token(
+    form_data: OAuth2PasswordRequestForm = Depends(OAuth2PasswordRequestForm)
+):
+    email = form_data.username
+    password = form_data.password
+    user = await authenticate(email, password)
+    
+    if not user:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED)
+    
+    token = await create_access_token(user)
+    
+    return {'access_token': token.access_token, 'token_type': 'bearer'}
+```
+
+Using the dependency, we don't need to implement the OAuth2 protocol ourselves.
+
+**`authentication.py`**
+
+```python
+async def authenticate(email: str, password: str) -> UserDB | None:
+    try:
+        user = await UserTortoise.get(email=email)
+    except DoesNotExist:
+        return None
+    
+    if not verify_password(password, user.hashed_password):
+        return None
+    
+    return UserDB.from_orm(user)
+
+async def create_access_token(user: UserDB) -> AccessToken:
+    access_token = AccessToken(user_id=user.id)
+    access_token_tortoise = await AccessTokenTortoise.create(
+        **access_token.dict()
+    )
+    
+    return AccessToken.from_orm(access_token_tortoise)
+```

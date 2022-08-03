@@ -23,6 +23,12 @@ conda create -n env_name python=3.x
 conda env create -f environment.yml
 ```
 
+- Update environment
+```bash
+$ conda env update --file environment.yml --prune
+```
+[python - How to update an existing Conda environment with a .yml file - Stack Overflow](https://stackoverflow.com/questions/42352841/how-to-update-an-existing-conda-environment-with-a-yml-file)
+
 - Using `pip` only after conda
 
 ```shell
