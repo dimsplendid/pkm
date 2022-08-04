@@ -48,8 +48,10 @@ async def receive_message(
 ):
     async with broadcast.subscribe(CHANNEL) as subscriber:
         async for event in subscriber:
-            message_event = MessageEvent(event.message)
+            message_event = MessageEvent.parse_raw(event.message)
             # Discard user's own messages
+            # in real world, it's better to use 
+            # UID(user identifier)
             if message_event.username != username:
                 await websocket.send_json(message_event.dict())
                 
@@ -62,4 +64,58 @@ async def send_message(
     await broadcast.publish(CHANNEL, message=event.json())
 ```
 
-First, we defined a `Pydantic Model` to help us structure the data
+First, we defined a `Pydantic Model` to help us structure the data. Instead of just passing raw strings, we have an object bearing both the message and the username.
+
+The data of the message contains serialized JSON, using `Pydantic.parse_raw` to help us parse the JSON string into an object.
+
+In the same time, we also send the message via JSON thanks to `send_json` method.
+
+The second function, `send_message`, is to publish a message to a broker.
+
+And the following WebSocket endpoint is quite the same with previous ones.
+
+**`app.py`**
+
+```python
+@app.websocket("/ws")
+async def websocket_endpoint(
+    websocket: WebSocket,
+    username: str = "Anonymous",
+):
+    await websocket.accept()
+    try:
+        while True:
+            receive_message_task = asyncio.create_task(
+                receive_message(websocket, username)
+            )
+            send_message_task = asyncio.create_task(
+                send_message(websocket, username)
+            )
+            done, pending = await asyncio.wait(
+                {receive_message_task, send_message_task},
+                return_when=asyncio.FIRST_COMPLETED,
+            )
+            for task in pending:
+                task.cancel()
+            for task in done:
+                task.result()
+    except WebSocketDisconnect:
+        pass
+```
+
+Finally, we need to tell FastAPI to open the broker and close when exiting:
+
+**`app.py`**
+
+```python
+@app.on_event("startup")
+async def startup():
+    await broadcast.connect()
+    
+@app.on_event("shutdown")
+async def shutdown():
+    await broadcast.disconnect()
+```
+
+
+
