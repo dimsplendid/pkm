@@ -110,7 +110,7 @@ The most interesting part is we call our two functions, wrapped by the `create_t
 
 ## Using Dependencies
 
-Since the dependencies are designed with HTTP, this comes with a few drawbacks with WebSocket endpoint
+There are some differences since the dependencies are designed with HTTP, this comes with a few drawbacks with WebSocket endpoint
 
 1. Can not use security dependencies like [[Managing Authentication and Security in FastAPI]]
 	> see more in [WebSockets - FastAPI (tiangolo.com)](https://fastapi.tiangolo.com/advanced/websockets/)
@@ -118,6 +118,33 @@ Since the dependencies are designed with HTTP, this comes with a few drawbacks w
 
 > [!Note]
 > 不過我暫時還不會用到這個，先看看目前的做法等待就好:D
+
+**`app.py`**
+
+```python
+@app.websocket("/ws")
+async def websocket_endpoint(
+    websocket: WebSocket,
+    username: str = "Anonymous",
+    token: str|None = Cookie(None),
+):
+    if token != API_TOKEN:
+        await websocket.close(code=status.WS_1008_POLICY_VIOLATION)
+        return
+    
+    await websocket.accept()
+    await websocket.send_text(f"Hello {username}")
+    
+    try:
+        while True:
+            data = await websocket.receive_text()
+            await websocket.send_text(f"Message text was: {data}")
+    except WebSocketDisconnect:
+        websocket.close()
+```
+
+
+
 
 ## See More
 

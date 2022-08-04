@@ -13,3 +13,9 @@ We need to run [[Redis]] for this section, the easiest way is using docker
 ```bash
 $ docker run -d --name fastapi-redis -p 6379:6379 redis
 ```
+
+To run the broker for the example,
+
+```bash
+$ pip install "broadcaster[redis]"
+```
