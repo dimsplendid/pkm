@@ -22,4 +22,17 @@ To solve this, we generally rely on message brokers.
 
 In this section, we would use Redis for message broker, which can set up at [[Technical requirements]].
 
+First, we need a broadcaster:
 
+**`app.py`**
+
+```python
+broadcast = Broadcast("redis://localhost:6379")
+CHANNEL = "CHAT"
+```
+
+The `CHANNEL` is the name for publishing and subscribing, in real world this can be generated dynamically for the application such as chat rooms.
+
+Then we define two function to send and receive messages.
+
+**`app.py`**
