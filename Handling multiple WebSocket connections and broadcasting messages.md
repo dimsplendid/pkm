@@ -1,9 +1,9 @@
 ---
 aliases: 
+date created: Tuesday, August 2nd 2022, 11:05:49 am
+date modified: Thursday, August 4th 2022, 6:02:04 pm
 tags: python/fastapi web/websocket 
 title: Handling Multiple WebSocket Connections and Broadcasting Messages
-date created: Tuesday, August 2nd 2022, 11:05:49 am
-date modified: Tuesday, August 2nd 2022, 11:05:53 am
 ---
 
 # Handling Multiple WebSocket Connections and Broadcasting Messages
@@ -36,3 +36,30 @@ The `CHANNEL` is the name for publishing and subscribing, in real world this can
 Then we define two function to send and receive messages.
 
 **`app.py`**
+
+```python
+class MessageEvent(BaseModel):
+    username: str
+    message: str
+
+async def receive_message(
+    websocket: WebSocket,
+    username: str,
+):
+    async with broadcast.subscribe(CHANNEL) as subscriber:
+        async for event in subscriber:
+            message_event = MessageEvent(event.message)
+            # Discard user's own messages
+            if message_event.username != username:
+                await websocket.send_json(message_event.dict())
+                
+async def send_message(
+	websocket: WebSocket, 
+	username: str
+):
+    data = await websocket.receive_text()
+    event = MessageEvent(username=username, message=data)
+    await broadcast.publish(CHANNEL, message=event.json())
+```
+
+First, we defined a `Pydantic Model` to help us structure the data
