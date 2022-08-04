@@ -8,9 +8,4 @@ title: Saturday Talking Topic
 
 # Saturday Talking Topic
 
-1. 雙語國家
-2. 硬體 bug eg: 放射性元素
-3. 希萌
-4. python 3.11
-5. 東方版權問題
-6. github 部屬自己的 blog
+1. Steam Deck
