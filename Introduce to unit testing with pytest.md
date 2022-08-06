@@ -65,3 +65,5 @@ def test_add():
 ```
 
 And for more complex testing, this could be worse.
+
+To help with this specific task, `pytest` provides the `parametrize` marker. In `pytest`, a **marker**
