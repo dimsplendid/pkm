@@ -1,7 +1,7 @@
 ---
 aliases: 
 date created: Thursday, August 4th 2022, 9:12:28 pm
-date modified: Thursday, August 4th 2022, 9:12:32 pm
+date modified: Sunday, August 7th 2022, 8:59:42 pm
 tags: python/fastapi testing/unit-test testing/pytest
 title: Introduce to Unit Testing with Pytest
 ---
@@ -67,4 +67,24 @@ def test_add():
 And for more complex testing, this could be worse.
 
 To help with this specific task, `pytest` provides the `parametrize` marker. In `pytest`, a **marker** is a special decorator to pass metadata for testing.
+
+```python
+import pytest
+
+from introduction import add
+
+@pytest.mark.parametrize(
+    "a, b, expected", 
+    [
+        (1, 2, 3),
+        (2, 2, 4),
+        (3, 2, 5),
+        (4, 2, 6),
+    ]
+)
+def test_add(a, b, expected):
+    assert add(a, b) == expected
+```
+
+## Reusing Test Logic by Creating Fixtures
 
