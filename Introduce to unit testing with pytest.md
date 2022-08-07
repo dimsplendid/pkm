@@ -88,3 +88,17 @@ def test_add(a, b, expected):
 
 ## Reusing Test Logic by Creating Fixtures
 
+When testing a large application, tests tend to become quite repetitive: lots of them will share the same boilerplate code. This is where `fixture` come in.
+
+```python
+@pytest.fixture
+def address():
+    return Address(
+        stree_address="123 Main Street",
+        postal_code="12345",
+        city="Anytown",
+        country="USA",
+    )
+```
+
+Once again, `pytest` makes it very straightforward: fixtures are *simple functions* decorated *with the fixture decorator*.
