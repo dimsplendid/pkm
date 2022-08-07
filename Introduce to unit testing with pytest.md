@@ -101,4 +101,10 @@ def address():
     )
 ```
 
-Once again, `pytest` makes it very straightforward: fixtures are *simple functions* decorated *with the fixture decorator*.
+Once again, `pytest` makes it very straightforward: fixtures are *simple functions* decorated *with the fixture decorator*. And we can use the function name as parameter later such as:
+
+```python
+def test_address_country(address): # pytest would know this fixture!
+    assert address.country == "USA"
+```
+
