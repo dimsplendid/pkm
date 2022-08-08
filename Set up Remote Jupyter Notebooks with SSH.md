@@ -12,7 +12,18 @@ title: Set up Remote Jupyter Notebooks with SSH
 
 This is quite simple on Linux, but we need to do a little work on Windows. (But it's still trivial after Windows 10)
 
-## 2. SSH to the Remote System and Start Jupyter Notebook[^1]
+## 2. Start Jupyter Notebook at Server[^1]
+
+```bash
+jupyter lab --no-browser --port 8888
+```
+
+The `--no-browser` option would make the `jupyter lab` not open the browser. After all, we would connect the notebook on the client machine.
+
+> [!Hint] Hint: How to set the parameter of Django Extensions (shell_plus)
+> [[Django Jupyter Set Up#Customize Jupyter Notebook Options]]
+
+
 
 ## Reference
 

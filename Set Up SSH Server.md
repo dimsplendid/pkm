@@ -56,10 +56,11 @@ Set-Service -Name sshd -StartupType 'Automatic'
 
 ### Check Firewall Setting
 
+```powershell
+Get-NetFirewallRule -Name *ssh*
 ```
-PS C:Windowssystem32> Get-NetFirewallRule -Name *ssh*
 
-
+```
 Name                  : OpenSSH-Server-In-TCP
 DisplayName           : OpenSSH SSH Server (sshd)
 Description           : Inbound rule for OpenSSH SSH Server (sshd)
@@ -81,7 +82,29 @@ PolicyStoreSource     : PersistentStore
 PolicyStoreSourceType : Local
 ```
 
-### Add 
+### Add Start on Boot (Optional)
+
+To automatically start when you boot, we can use the command:
+
+```powershell
+Set-Service -Name sshd -StartupType 'Automatic'
+```
+
+> [!Note]
+> PowerShell 的 autocomplete 和指令的自動著色都挺不錯的，未來有需要可以來學學。
+
+## Connect SSH Server
+
+```bash
+ssh username@server-ip
+```
+
+> [!Hint] Hint: How to get my Windows user name?
+> Using the command at CMD or PowerShell
+> ```powershell
+> whoami
+>```
+>
 
 ## Reference
 
