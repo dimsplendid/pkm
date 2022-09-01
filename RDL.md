@@ -27,7 +27,7 @@ date modified: Monday, July 11th 2022, 1:25:21 pm
 | FAB1 | FAB 1 CF 檢測 | 陳柏瑋 | |
 | RDL | RDL PC | 梁起華 | 5014-12225 / 550-15035 |
 | RDL | RDL PI | 王彗珊 | 5014-12223 |
-| RDL | RDL ODF | 潘錦榮 | 50014-12227 / 550-14966 |
+| RDL | RDL ODF | 潘錦榮 | 5014-12227 / 550-14966 |
 | RDL | RDL SB | 梁榮良 | 5014-12683 |
 | RDL | RDL PICO | | 5014-12255 |
 | RDL | RDL RUB | | 5014-12227 |
