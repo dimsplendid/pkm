@@ -14,9 +14,16 @@ I'm graduated from National Taiwan University with the master's degree in Chemis
 
 I have been with Innolux for 5 years and work as a technology development engineer.
 
-I'm responsible for testing new LCD materials such as LC, PI and seal.
+I'm responsible for testing the new LCD materials, such as liquid crystal, polyimide and seal.
 
+The main testing items are optical, reliability and to find the proper production conditions. And we also need to solve the issues from the customers. 
+
+Because of these experience, I'm truly passionate about developing new liquid crystal with Merck.
 
 ## Interests
 
 In my leisure time, I enjoy reading novel, watching anime and camping.
+
+## Graduated
+
+My master's job is about thermal quantum dynamics simulation. I simulate the energy transfer network of the plant's PSII system. And try to find the energy transfer path by network searching algorithm.
