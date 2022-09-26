@@ -12,7 +12,10 @@ Nice to meet you, my name is Tseng Wei-Hsiang. You can just call me by my Englis
 
 I'm graduated from National Taiwan University with the master's degree in Chemistry.
 
-I'm the technology development engineer at Innolux now. My 
+I have been with Innolux for 5 years and work as a technology development engineer.
+
+I'm responsible for testing new LCD materials such as LC, PI and seal.
+
 
 ## Interests
 
