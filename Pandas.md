@@ -9,4 +9,9 @@ title: Pandas
 # Pandas
 
 - [[Pandas Multiindex|multiindex]]
-- 
+
+## Mapping & Apply
+
+
+
+[[Wes McKinney - Python for Data Analysis-O'Reilly Media (2012).pdf]]
