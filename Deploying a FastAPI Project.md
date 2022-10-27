@@ -8,7 +8,7 @@ title: Deploying a FastAPI Project
 
 # Deploying a FastAPI Project
 
-- Setting and using environment variables
+- [[Setting and using environment variables]]
 - Managing Python dependencies
 - Deploying a FastAPI application on a serverless platform
 - Deploying a FastAPI application with Docker
