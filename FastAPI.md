@@ -38,5 +38,11 @@ title: FastAPI
 7. [[Managing Authentication and Security in FastAPI]]
 8. [[Defining WebSockets for Two-Way Interactive Communication in FastAPI]]
 9. [[Testing an API Asynchronously with pytest and HTTPX]]
-10. Deploying a FastAPI Project
+10. [[Deploying a FastAPI Project]]
 
+## Section 3: Build a Data Science API with Python and FastAPI
+
+11. [[Introduction to NumPy and pandas]]
+12. Train Machine Learning Models with scikit-learn
+13. Create an Efficient Prediction API Endpoint with FastAPI
+14. Implement a Real-Time Face Detection System Using WebSockets with FastAPI and OpenCV
