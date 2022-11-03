@@ -110,3 +110,5 @@ ODF 一次需要 20 g
 ## 2211 曝光
 
 氮氣箱：單放 20 pc/box, 背對背 40 pc/box
+
+![[RD line, Fab5, Fab3, T2 PAPI 製程條件.20221102.xlsx]]
