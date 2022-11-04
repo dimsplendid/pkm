@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: test-cell, INX/rdl
+tags: INX/test-cell, INX/rdl
 date created: Monday, April 25th 2022, 1:18:38 pm
 date modified: Monday, July 11th 2022, 1:24:45 pm
 title: Test Cell
@@ -111,4 +111,4 @@ ODF 一次需要 20 g
 
 氮氣箱：單放 20 pc/box, 背對背 40 pc/box
 
-![[RD line, Fab5, Fab3, T2 PAPI 製程條件.20221102.xlsx]]
+![[RD line, Fab5, Fab3, T2 PAPI 製程條件.20221102.xlsx]]![[框膠廠商 TR1 PI 生成條件.20221103.xlsx]]
