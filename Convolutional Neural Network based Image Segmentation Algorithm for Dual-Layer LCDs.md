@@ -18,7 +18,12 @@ Objective: improve the quality of dual cell
 
 ### Problems
 
+### Quantity
+
 ### Previous Solution
+
+1. fuzzy algorithms[^1]
+2. viewpoint compensation-based image segmentation algorithms[^2]
 
 ## Convolution Network
 
@@ -26,3 +31,7 @@ Objective: improve the quality of dual cell
 > [!TODO] 
 > Simple Intro
 
+## Reference
+
+[^1]: [[Image_splitting_techniques_for_a_dual_layer_high_d.pdf]]
+[^2]: [[基于视角补偿的双层液晶显示图像分割算法研究.pdf]]
