@@ -27,6 +27,11 @@ Objective: improve the quality of dual cell
 
 ## Convolution Network
 
+## Dataset
+
+2730 images which cover a wide range of scenes
+
+with 5 view angle: 0°, 15°, 30°, 45° and 64°
 
 > [!TODO] 
 > Simple Intro
