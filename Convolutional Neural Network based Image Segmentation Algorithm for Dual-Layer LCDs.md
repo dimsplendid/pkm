@@ -10,5 +10,19 @@ title: Convolutional Neural Network based Image Segmentation Algorithm for Dual-
 
 [[P-3.1 Convolutional Neural Network based Image Segmentation Algorithm for Dual-Layer LCDs.pdf]]
 
+## Abstraction
+
+Objective: improve the quality of dual cell
+
+## Dual Cell
+
+### Problems
+
+### Previous Solution
+
 ## Convolution Network
+
+
+> [!TODO] 
+> Simple Intro
 
