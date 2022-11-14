@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: test-cell INX
+tags: test-cell INX/SOP 
 date created: Monday, April 25th 2022, 9:48:45 pm
 date modified: Monday, April 25th 2022, 9:48:45 pm
 title: test cell VHR SOP
@@ -34,6 +34,6 @@ title: test cell VHR SOP
 
 Merck 是用 +1 V & -1 V 方波來量 VHR
 
-TOC 設定 1V 是指 Vpp，offset 設定為 0 的情況就是 ±0.5 V，所以要設定 2V 來量測。
+TOC 設定 1V 是指 Vpp，offset 設定為 0 的情況就是 ±0.5 V，所以要設定 2V 來量測。(單子填寫一樣寫 1 V 即可)
 
 參考 [檢測單-電性 #93](http://td.cminl.oa/pm/issues/93) 開單
