@@ -1,9 +1,9 @@
 ---
 aliases: 
 date created: Monday, November 14th 2022, 7:49:27 pm
-date modified: Monday, November 14th 2022, 7:49:29 pm
+date modified: Monday, November 14th 2022, 11:15:19 pm
 tags: INX/paper 
-title: Convolutional Neural Network based Image Segmentation Algorithm for Dual-Layer LCDs
+title: Convolutional Neural Network Based Image Segmentation Algorithm for Dual-Layer LCDs
 ---
 
 # Convolutional Neural Network Based Image Segmentation Algorithm for Dual-Layer LCDs
@@ -16,16 +16,29 @@ Objective: improve the quality of dual cell
 
 ## Dual Cell
 
+![[Pasted image 20221114231822.png]]
 ### Problems
-
+![[Pasted image 20221114231904.png]]
 ### Quantity
+
+#### Peak Signal-to-noise Ratio[^1]
+
+$$
+
+MSE = \frac{1}{mn}\sum^{m-1, n-1}_{i,j=0}[I(i,j) -K(i,j)]^2
+
+$$
 
 ### Previous Solution
 
-1. fuzzy algorithms[^1]
-2. viewpoint compensation-based image segmentation algorithms[^2]
+1. fuzzy algorithms[^2]
+2. viewpoint compensation-based image segmentation algorithms[^3]
 
 ## Convolution Network
+
+### Improvement
+
+
 
 ## Dataset
 
@@ -38,5 +51,8 @@ with 5 view angle: 0°, 15°, 30°, 45° and 64°
 
 ## Reference
 
-[^1]: [[Image_splitting_techniques_for_a_dual_layer_high_d.pdf]]
-[^2]: [[基于视角补偿的双层液晶显示图像分割算法研究.pdf]]
+[^1]: [峰值訊噪比](https://zh.wikipedia.org/zh-tw/%E5%B3%B0%E5%80%BC%E4%BF%A1%E5%99%AA%E6%AF%94)
+
+[^2]: [[Image_splitting_techniques_for_a_dual_layer_high_d.pdf]]
+
+[^3]: [[基于视角补偿的双层液晶显示图像分割算法研究.pdf]]
