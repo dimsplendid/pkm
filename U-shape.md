@@ -9,3 +9,4 @@ title: U-shape
 # U-shape
 
 1. test cell 高溫 U-shape 是烘箱式
+2. 量測單主管簽完要改成**已成立**。
