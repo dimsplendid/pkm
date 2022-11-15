@@ -37,9 +37,16 @@ $$
 ## Convolution Network
 
 ### Improvement
-
-
-
+| method                 | time(s) |
+| ---------------------- | ------- |
+| viewpoint compensation | ~300    |
+| CNN                    | 1.183   | | method                 | time(s) |
+| ---------------------- | ------- |
+| viewpoint compensation | ~300    |
+| CNN                    | 1.183   | | method                 | time(s) |
+| ---------------------- | ------- |
+| viewpoint compensation | ~300    |
+| CNN                    | 1.183   | 
 ## Dataset
 
 2730 images which cover a wide range of scenes
@@ -48,6 +55,14 @@ with 5 view angle: 0°, 15°, 30°, 45° and 64°
 
 > [!TODO] 
 > Simple Intro
+
+
+## Conclusion
+
+| method                 | time(s) |
+| ---------------------- | ------- |
+| viewpoint compensation | ~300    |
+| CNN                    | 1.183   | 
 
 ## Reference
 
