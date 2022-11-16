@@ -13,6 +13,6 @@ title: Paper Reading ICDT 2022
 [[A Study on Local Dimming Algorithm Design for MINI LED Backlight Display Quality Improvement.]]
 
 
-[[3.4 Key factors governing the external quantum efficiency of TADF OLEDs evidence from machine learning.pdf]]
 
-[[acsomega.1c06820.pdf]]
+[[Key Factors Governing the External Quantum Efficiency of Thermally Activated Delayed Fluorescence Organic Light-Emitting Devices - Evidence from Machine Learning]]
+
