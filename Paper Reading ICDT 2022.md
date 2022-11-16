@@ -10,8 +10,8 @@ title: Paper Reading ICDT 2022
 
 [[Convolutional Neural Network based Image Segmentation Algorithm for Dual-Layer LCDs]]
 
+[[A Study on Local Dimming Algorithm Design for MINI LED Backlight Display Quality Improvement.]]
 
-[[P-7.11 A Study on Local Dimming Algorithm Design for MINI LED Backlight Display Quality Improvement_BOE.pdf]]
 
 [[3.4 Key factors governing the external quantum efficiency of TADF OLEDs evidence from machine learning.pdf]]
 

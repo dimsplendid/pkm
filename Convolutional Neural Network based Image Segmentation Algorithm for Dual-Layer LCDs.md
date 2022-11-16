@@ -40,12 +40,6 @@ $$
 | method                 | time(s) |
 | ---------------------- | ------- |
 | viewpoint compensation | ~300    |
-| CNN                    | 1.183   | | method                 | time(s) |
-| ---------------------- | ------- |
-| viewpoint compensation | ~300    |
-| CNN                    | 1.183   | | method                 | time(s) |
-| ---------------------- | ------- |
-| viewpoint compensation | ~300    |
 | CNN                    | 1.183   | 
 ## Dataset
 
