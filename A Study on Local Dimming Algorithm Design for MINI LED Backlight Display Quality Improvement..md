@@ -9,5 +9,8 @@ date modified: Thursday, November 17th 2022, 6:06:17 am
 
 [[P-7.11 A Study on Local Dimming Algorithm Design for MINI LED Backlight Display Quality Improvement_BOE.pdf]]
 
-## Objective
+## Abstraction
+
+list the key point of local dimming algorithm
+
 
