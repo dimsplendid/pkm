@@ -27,3 +27,7 @@ In my leisure time, I enjoy reading novel, watching anime and camping.
 ## Graduated
 
 My master's job is about thermal quantum dynamics simulation. I simulate the energy transfer network of the plant's PSII system. And try to find the energy transfer path by network searching algorithm.
+
+## 零瑣
+
+1. 積極參與公司 AI 化、上課與設計系統
