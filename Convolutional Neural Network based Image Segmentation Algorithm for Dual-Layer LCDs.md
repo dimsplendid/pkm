@@ -24,9 +24,10 @@ Objective: improve the quality of dual cell
 #### Peak Signal-to-noise Ratio[^1]
 
 $$
-
-MSE = \frac{1}{mn}\sum^{m-1, n-1}_{i,j=0}[I(i,j) -K(i,j)]^2
-
+\begin{align*}
+MSE &= \frac{1}{mn}\sum^{m-1, n-1}_{i,j=0}[I(i,j) -K(i,j)]^2 \\
+PSNR &= 10 \log (\frac{MAX^2_I}{MSE}) \text{ dB}
+\end{align*}
 $$
 
 ### Previous Solution
