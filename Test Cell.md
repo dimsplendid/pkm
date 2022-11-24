@@ -13,6 +13,12 @@ title: Test Cell
 
 ![[image (1).png]]
 
+## 名詞定義
+
+1. 光罩簡
+1. D: Slit angle (e.g. `D7` = slit angle 7°, `D17` = slit angle 17°)
+2. P: Pitch 間距(e.g. `P7` = pitch 7 um, `P4` = pitch 4 um)
+3. Ratio: ITO 寬度和
 ![[image (2).png]]
 
 ![[image (3).png]]
