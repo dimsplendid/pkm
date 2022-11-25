@@ -13,18 +13,8 @@ title: Test Cell
 
 ![[image (1).png]]
 
-## 名詞定義
 
-1. 光罩簡
-1. D: Slit angle (e.g. `D7` = slit angle 7°, `D17` = slit angle 17°)
-2. P: Pitch 間距(e.g. `P7` = pitch 7 um, `P4` = pitch 4 um)
-3. Ratio: ITO 寬度和
-![[image (2).png]]
 
-![[image (3).png]]
-
-1. VHR 可用 2211(五宮格) 量測 > 但差異性不大
-	> 還是用 TN type(九宮格) 來量測。
 
 > [!Note]
 > 但如果加上 OC/PS 製程，VHR 會有顯註的差異，且 IS 也會不同，之後，IS/VHR 統一用 2211 做並加上 OC/PS 製程
@@ -63,15 +53,6 @@ OC/PS 製程等 CR Lab 實驗，北廠統一由郭家綺安排。
 ![[Pasted image 20220908140305.png]]
 
 所謂的均勻是基板中心點跟四個角段差 < 0.2 um
-
-## To Understand
-
-1. ratio 1.5
-2. ITO/Slit
-3. delta angle
-4. pitch: ITO/slit 週期, ITO + Slit = Pitch
-5. DOM: data on mask
-6. DOG: data on glass
 
 ## Ball 選擇
 
