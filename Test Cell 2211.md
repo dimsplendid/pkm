@@ -1,6 +1,6 @@
 ---
 aliases: 
-tags: 
+tags: INX/test-cell
 title: Test Cell 2211
 date created: Friday, November 25th 2022, 4:59:12 pm
 date modified: Friday, November 25th 2022, 4:59:14 pm
