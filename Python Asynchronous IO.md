@@ -2,7 +2,7 @@
 aliases: 
 tags: python/fastapi python web
 date created: Sunday, May 15th 2022, 4:13:35 pm
-date modified: Monday, May 16th 2022, 12:17:37 am
+date modified: Sunday, December 4th 2022, 10:52:02 pm
 title: Python Asynchronous IO
 ---
 
@@ -15,7 +15,7 @@ Basically, this is a way to make I/O operations non-blocking and allow the progr
 
 For simple scripts this is not the issue. But when situation like loading a image from web server, if it needs 10 seconds, the other request also need to wait for this.
 
-To solve this, traditional Python web servers using  **WSGI**(Web Server Gateway Interface), such as Flask and [[Django]], spawn several **workers**. Those are sub-processes of the web server that are all able to answer requests. If one is busy processing a long request, others can answer new coming requests.
+To solve this, traditional Python web servers using **WSGI**(Web Server Gateway Interface), such as Flask and [[Django]], spawn several **workers**. Those are sub-processes of the web server that are all able to answer requests. If one is busy processing a long request, others can answer new coming requests.
 
 With asynchronous I/O, a single process won't block when processing a request with a long I/O operation.
 
@@ -48,4 +48,5 @@ With `async/await` keywords, writing code that just looks like synchronous code.
 ## Ref
 
 [^1]: [Async IO on Linux: select, poll, and epoll (jvns.ca)](https://jvns.ca/blog/2017/06/03/async-io-on-linux--select--poll--and-epoll/)
+
 [^2]: [高效 Web 伺服器開發 - HackMD](https://hackmd.io/@sysprog/fast-web-server)
