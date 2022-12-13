@@ -62,7 +62,7 @@ date modified: Friday, November 25th 2022, 3:50:25 pm
 2. LC 注入
 	1. 註明前面空 Cell 的實驗單號 (RDXXXXXXXX)
 	2. 註明條件、數量、壓合 Cell Gap 與容許值 (通常 ±0.15 um)
-	3. 產出後需確認面內均勻 (日光燈下) 與阻抗
+	3. 產出後需確認面內均勻 (日光燈下) 與阻抗(Data Line 與 Vcom 間需大於 $20 M\ohm$)
 
 > [!Info]
 > 維健家：
