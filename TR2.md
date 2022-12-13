@@ -10,7 +10,8 @@ date modified: Friday, November 25th 2022, 3:50:25 pm
 
 ## Objective
 
-使用 test cell 驗証光學和 RA (U-Shape, VHR, LTS)
+使用 test cell 驗証光學(VT, RT) 和 RA(U-Shape, VHR, LTS)
+
 
 ## SOP
 
