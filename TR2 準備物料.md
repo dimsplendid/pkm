@@ -36,7 +36,7 @@ date modified: Friday, November 25th 2022, 4:48:57 pm
 1. 和物管詢問(CC 支援)
 2. 和支援約時間入產線拿料
 
-SS3727-R24SLB 250 mL  
+SS3727-R24SLB 250 mL  (1 pc(8 x 10.13) need 3 cc)
 TG1553SA7 250 mL
 
 > [!Example] E-mail Example
