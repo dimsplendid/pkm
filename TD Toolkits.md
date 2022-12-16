@@ -38,3 +38,8 @@ $ python manage.py runserver [ip]:[port] --settings=config.settings.semi_prod
 ```
 
 > 目前 IP: 10.56.216.45, port: 8001
+
+## 改進
+
+1. 應可以用類似基因演算法的方式來找 Tr 對應的 Vop
+2. 
