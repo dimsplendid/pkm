@@ -5,7 +5,12 @@ ref: https://www.ivarprudnikov.com/nodejs-server-running-python-scripts/
 ```javascript=
 child_process.spawn()
 ```
+> [!Question]
 > 目前 tdtoolkit_web 是使用 python-shell，不過開啟時需要 Loading moduled 相當費時，有沒有好的方法？
+
+> [!Hint]
+> 像是 `FastAPI` 有個 on startup 的 function 可以在開始時載入需要的東西，`Django` 應該也有類似的功能，要找找。
+
 ```javascript=
 const path = require('path')
 const {spawn} = require('child_process')
