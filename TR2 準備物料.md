@@ -31,13 +31,24 @@ date modified: Friday, November 25th 2022, 4:48:57 pm
 
 ## OC
 
-單次需求，保存期限 2 個月，需要和 Fab 5 線上借料。
+1. 保存：-20 °C
+2. 目前量產型號：SS3727-R24SLB
+3. 需求量：3 cc/pc(8 x 10.13)
+4. 保存期限：2 month
 
+~~單次需求，保存期限 2 個月，需要和 Fab 5 線上借料。~~
+> 建議使用新鮮物料，和齊
+
+## PS
+
+保存：5 °C
+
+TG1553SA7 250 mL
+(1 pc(8 x 10.13) need 3 cc)
+
+取料流程：(見下辺)
 1. 和物管詢問(CC 支援)
 2. 和支援約時間入產線拿料
-
-SS3727-R24SLB 250 mL  (1 pc(8 x 10.13) need 3 cc)
-TG1553SA7 250 mL
 
 > [!Example] E-mail Example
 > 寄件: "Andrew Tseng 曾煒翔"<andrew.tseng@innolux.com>  
