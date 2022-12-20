@@ -29,6 +29,11 @@ date modified: Friday, November 25th 2022, 4:48:57 pm
 | 成分分析      | 5      | 1    | 5      | 給史宗白送樣 |
 | Total         |        |      | 115    |              |
 
+> [!Info] Update
+> 高穿高信賴液晶 Project, 2022/10
+
+
+
 ## OC
 
 1. 保存：-20 °C
@@ -37,7 +42,7 @@ date modified: Friday, November 25th 2022, 4:48:57 pm
 4. 保存期限：2 month
 
 ~~單次需求，保存期限 2 個月，需要和 Fab 5 線上借料。~~
-> 建議使用新鮮物料，和齊
+> 建議使用新鮮物料，需和齊翰確認
 
 ## PS
 
