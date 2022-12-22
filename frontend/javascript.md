@@ -44,5 +44,7 @@ title: JavaScript
 3. [[JS Part 3|Objects]]
 4. [[JS Part 4|Interacting with webs]]
 
+## Reference
 
+[[Luis Atencio - Functional Programming in JavaScript_ How to improve your JavaScript programs using functional techniques-Manning Publications (2016).pdf]]
 
