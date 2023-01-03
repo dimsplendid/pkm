@@ -30,6 +30,10 @@ date modified: Friday, November 25th 2022, 4:59:14 pm
 
 以 TA2211CKRD 來製做即可
 
-VHR + U-Shape，一個條件 5 pc，良率以 30% 計，需做 15 pc。共 30 pc
+VHR + U-Shape，一個條件 5 pc，良率以 33% 計，需做 15 pc。共 30 pc。
+在 spin coating 大小限制下(8x10.13)，一 cut(305x375) ITO 可切 9 片，但有 pattern 的 TFT 由於切割的限制，僅能切出 6 片，可產出 Flicker Pattern(U-Shape 用) 16 chip, VHR pattern 8 chip(VHR 用) 
 
+calculate function:
+```python
 
+```
