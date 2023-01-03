@@ -23,3 +23,5 @@ date modified: Friday, November 25th 2022, 4:59:14 pm
 ### TA2211CKRD
 
 ![[Pasted image 20221125131424.png]]
+
+## TR2 
