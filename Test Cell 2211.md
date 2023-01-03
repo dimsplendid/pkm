@@ -24,4 +24,12 @@ date modified: Friday, November 25th 2022, 4:59:14 pm
 
 ![[Pasted image 20221125131424.png]]
 
-## TR2 
+## TR2 2211 數量估算
+
+### 1. 純 RA
+
+以 TA2211CKRD 來製做即可
+
+VHR + U-Shape，一個條件 5 pc，良率以 30% 計，需做 15 pc。共 30 pc
+
+
