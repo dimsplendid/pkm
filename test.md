@@ -9,7 +9,10 @@ $$
 \begin{align*}
 t_1 = \frac{d}{v_1}\\
 t_2 = \frac{d}{v_2}\\
-t_1-t_2 = \frac{d}{v_1} - \frac{d}{v_2} \propto \Delta nd
+t_1-t_2 = \frac{d}{v_1} - \frac{d}{v_2} = \frac{n_1d - n_2d}{c} \propto \Delta nd
 \end{align*}
 $$
 
+$$
+\omega = \frac{\lambda}{c}
+$$
