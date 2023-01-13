@@ -37,3 +37,9 @@ date modified: Monday, July 11th 2022, 1:25:21 pm
 | TOC  | TOC U-shape 測量    | 張涵誼/江淑如 | 5014-43672               |
 | TOC  | 實驗室 -2           |               | 5014-44732               |
 | TOC  | 實驗室 -3           |               | 5014-44829               |
+
+> [!Info]
+> Spin Coating (8x10.13) 每日上限
+> 1. CF Lab: 120 片(如果是 OC+PS 就只能做 60 片)
+> 2. PAPI: 40 對
+

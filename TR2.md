@@ -28,8 +28,8 @@ date modified: Friday, November 25th 2022, 3:50:25 pm
 	1. [[TR2 VT Measurement|VT]]
 	2. [[TR2 RT Measurement|RT]]
 2. RA
-	1. [[TR2 U-Shape|U-Shape]]
-	2. [[TR2 VHR|VHR]]
+	1. [[TR2 U-Shape|U-Shape]] (高(50°C/低溫)
+	2. [[TR2 VHR|VHR]] (高(60°C)/低溫)
 	3. [[TR2 LTS|LTS]]
 
 ## Appendix
