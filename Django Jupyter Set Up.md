@@ -48,7 +48,7 @@ NOTEBOOK_ARGUMENTS = [
 After all of these, it's easy to start the notebook in the future!
 
 ```bash
-python manage.py shell_pluss --lab
+python manage.py shell_plus --lab
 ```
 
 ## Reference
