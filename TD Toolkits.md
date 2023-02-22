@@ -42,4 +42,8 @@ $ python manage.py runserver [ip]:[port] --settings=config.settings.semi_prod
 ## 改進
 
 1. 應可以用類似基因演算法的方式來找 Tr 對應的 Vop
-2. 
+
+> [!Note]
+> Hp06316p Admin
+> username: hobob.kang
+> password: Yoyo0208[a-z]
