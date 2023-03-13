@@ -44,7 +44,7 @@ OC/PS 製程等 CR Lab 實驗，北廠統一由郭家綺安排。
 ### 片數估計
 
 $$
-\text{Cuts} = \lceil \frac{(\text{Conditions})\times 10}{36} \rceil
+\text{Cuts} = \bigg\lceil \frac{(\text{Conditions})\times 10}{36} \bigg\rceil
 $$
 
 ## Test Cell 使用 PS 暗態依然無趨勢
