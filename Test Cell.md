@@ -41,6 +41,12 @@ OC/PS 製程等 CR Lab 實驗，北廠統一由郭家綺安排。
 > 挑片需要確認 CD 值
 > 每個條件樣品數應 20
 
+### 片數估計
+
+$$
+\text{Cuts} = \lceil \frac{(\text{Conditions})\times 10}{36} \rceil
+$$
+
 ## Test Cell 使用 PS 暗態依然無趨勢
 
 **Rubbing**
