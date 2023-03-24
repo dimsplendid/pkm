@@ -102,12 +102,15 @@ date modified: Friday, November 25th 2022, 3:50:25 pm
 
 > [!TODO]
 > 確認 CD 卡控多少較合適
+> > 僅是找相近但沒有標準(或者就挑差異最小的？)，考慮到 AOI-03 機台和 Glass Booking 問題，還有後續 CD 資料查找較為麻煩，這個卡控先擱滯
 
 ## RA
 
 ### 2211 Test Cell 製作流程
 
 ### U-Shape
+
+目前兩兩量測，挑 ΔVpk 0.5~1.0 的兩片來取平均
 
 ### VHR
 
