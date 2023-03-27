@@ -51,7 +51,7 @@ date modified: Friday, November 25th 2022, 4:48:57 pm
 TG1553SA7 250 mL
 (1 pc(8 x 10.13) need 3 cc)
 
-取料流程：(見下辺)
+取料流程：(見下)
 1. 和物管詢問(CC 支援)
 2. 和支援約時間入產線拿料
 
