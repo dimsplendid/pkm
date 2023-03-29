@@ -12,6 +12,7 @@ date modified: Friday, November 25th 2022, 4:48:57 pm
 
 ### Test Cell 製作
 
+#INX/RDL/LC物料用量
 1. ODF 一次約 20 g/13 cuts
 2. Injection 約 2 g/10 pcs
 
