@@ -91,6 +91,8 @@ End Seal: UV 固化
 
 ### 2211 VHR
 
+液晶汙染條件：LC:Seal = 10 g: 1g, 1 hr 120°C
+
 ![[IMG_1238.jpg]]
 
 ## LC TR2 用量

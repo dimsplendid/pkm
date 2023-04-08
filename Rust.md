@@ -10,6 +10,18 @@ title: Rust
 
 一個靜態、完整 error handling、easy read compile error info、有套件管理、可以自動生成 layout 與 documents。看看我又發現了什麼！
 
+> [!Note]
+> 由於在 windows 上預設的 compile tool chain 是 MSVC，但這個安裝需要管理員權限。在沒辦法的情況可以改用 GNU compiler
+> ```bash
+> rustup toolchain install stable-x86_64-pc-windows-gnu
+> ```
+> After installed,
+> ```bash
+> rustup default stable-x86_64-pc-windows-gnu
+> ```
+> 注意這使用了不同的 compiler 可能有 side effect > such as?
+> (遇到再說XD)
+
 ## Type Annotating
 
 和 [[Python]] 同樣有 type hint(annotating) 與 type inference。而且寫法也很像。
@@ -197,4 +209,33 @@ Using rust range syntax `..` to get the slice of string.
 ```rust
 let s = String::from("Hello world");
 let world = &s[6..11]
+```
+
+## Problem
+
+1. Vector 和 Array 有某種程度的相容？我算到以下例子
+```rust
+fn largest(list: &[i32]) -> &i32 {
+    let mut largest = &list[0];
+
+    for item in list {
+        if item > largest {
+            largest = item;
+        }
+    }
+
+    largest
+}
+
+fn main() {
+    let number_list = vec![34, 50, 25, 100, 65];
+
+    let result = largest(&number_list);
+    println!("The largest number is {}", result);
+
+    let number_list = vec![102, 34, 6000, 89, 54, 2, 43, 8];
+
+    let result = largest(&number_list);
+    println!("The largest number is {}", result);
+}
 ```
