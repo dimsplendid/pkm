@@ -8,4 +8,6 @@ title: Saturday Talking Topic
 
 # Saturday Talking Topic
 
-1. Steam Deck
+1. GPT-4
+2. 原神
+3. 

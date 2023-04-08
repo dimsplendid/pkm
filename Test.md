@@ -18,4 +18,27 @@ $$ a_i^\dagger\psi(\mathbf{r}_1,\mathbf{r}_2,\dots,\mathbf{r}N) = \frac{1}{\sqrt
 
 $$ a_i\psi(\mathbf{r}_1,\mathbf{r}_2,\dots,\mathbf{r}N) = \sqrt{n_i}\sum{j=1}{N}(-1){j}\phi_i^*(\mathbf{r}_j)\psi(\mathbf{r}_1,\dots,\hat{\mathbf{r}}j,\dots,\mathbf{r}{N}) $$
 
-其中 $\phi_i(\mathbf{r})$ 是第 i 個能階對應的單粒子波函數，$\hat{\mathbf{r}}_j$ 表示忽略第 j 個位置參數3。
+其中 $\phi_i(\mathbf{r})$ 是第 i 個能階對應的單粒子波函數，$\hat{\mathbf{r}}_j$ 表示忽略第 j 個位置參數。
+
+$$
+\begin{align}
+\vec{G_1} &= \frac{\vec{A}+\vec{B}+\vec{C}}{3} \\
+\vec{G_2} &= \frac{\vec{A}+\vec{D}+\vec{C}}{3} \\
+\overline{G_1G_2} &= |\vec{G_1}-\vec{G_2}| \\
+&= |\frac{\vec{B}-\vec{D}}{3}| = \frac{\overline{BD}}{3} \\
+&= \frac{\sqrt{12^2+24^2-2\cdot12\cdot24\cos(2\pi/3)}}{3} \\
+&= \frac{12\sqrt{7}}{3} = 4\sqrt{7}
+\end{align}
+$$
+$$
+\begin{align}
+&f(k) = \frac{1}{6}(13+3k) \\
+&\sum_{k=1}^n f(k) = \frac{1}{6}(13n+3\frac{n\cdot(n+1)}{2}) = \frac{1}{12}(3n^2+29n)\\
+\Rightarrow&\begin{cases}
+\frac{1}{12}(3n^2+29n) = 247\frac{1}{2}, \\
+n > 0.
+\end{cases}\\
+&3n^2+29n-2970 = 0 \\
+\Rightarrow &n = 27
+\end{align}
+$$
