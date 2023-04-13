@@ -45,3 +45,12 @@ eg: `LCT-15-1098` -> `LCT-15-1098RC`
 
 開 EC 變更
 > 有需求再去問賴瑞菊
+
+## 文件
+
+Namming Rule : 
+
+專案名稱 - Phase - TR活動 - TR Dep - 文件版本
+e.g.  10.1" TOD 4PEP 技術案-TR3- 技術驗證計畫書-TD-V1
+
+J8GMS010-1
