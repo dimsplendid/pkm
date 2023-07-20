@@ -8,6 +8,5 @@ title: Saturday Talking Topic
 
 # Saturday Talking Topic
 
-1. GPT-4
-2. 原神
-3. 
+1. Pydantic 2.0 using rust
+2. 
