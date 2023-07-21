@@ -9,4 +9,4 @@ title: Saturday Talking Topic
 # Saturday Talking Topic
 
 1. Pydantic 2.0 using rust
-2. 
+2. 光焰 amibo
