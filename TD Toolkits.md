@@ -47,3 +47,10 @@ $ python manage.py runserver [ip]:[port] --settings=config.settings.semi_prod
 > Hp06316p Admin
 > username: hobob.kang
 > password: Yoyo0208[a-z]
+
+## Improvement
+
+1. make simpler database
+2. embed dash -> make interactive modify data tools
+3. docker
+4. postgresql

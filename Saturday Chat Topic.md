@@ -8,6 +8,7 @@ title: Saturday Talking Topic
 
 # Saturday Talking Topic
 
-1. GPT-4
-2. 原神
-3. 
+1. 穿 IGA 服的反應
+2. 神獸帽子
+3. 八英雄任務讚
+4. 土遁
