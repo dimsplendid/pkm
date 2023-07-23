@@ -8,7 +8,6 @@ title: Saturday Talking Topic
 
 # Saturday Talking Topic
 
-1. 穿 IGA 服的反應
-2. 神獸帽子
-3. 八英雄任務讚
-4. 土遁
+1. Pydantic 2.0 using rust
+2. 光焰 amibo
+>>>>>>> origin/main
