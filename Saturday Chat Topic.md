@@ -10,4 +10,11 @@ title: Saturday Talking Topic
 
 1. Pydantic 2.0 using rust
 2. 光焰 amibo
->>>>>>> origin/main
+3. 颱風
+4. 去 ikea, 高雄港
+5. 
+
+
+H1B
+
+roblox typing game
