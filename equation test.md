@@ -1,10 +1,10 @@
 ---
-aliases: [untitle]
+aliases: [equation test]
 tags: 
-title: untitle
-linter-yaml-title-alias: untitle
+title: equation test
+linter-yaml-title-alias: equation test
 date-created: Saturday, February 18th 2023, 11:01:04 pm
-date-modified: Saturday, February 18th 2023, 11:25:37 pm
+date-modified: Thursday, July 27th 2023, 9:01:09 pm
 ---
 
 $$

@@ -134,7 +134,7 @@ println!("The value of x is {x+1}") // wrong
 > [!Note]
 > 這時候覺得 python 符號一致性真的利害。
 
-`String` and `Char` is the same with C, using double quote and single quote separately. And the encoding is UTF-8.
+`String` and `Char` is the same with **C**, using double quote and single quote separately. The difference is **Rust** using UTF-8.
 
 ## Statement Vs. Expression
 
@@ -239,3 +239,6 @@ fn main() {
     println!("The largest number is {}", result);
 }
 ```
+
+[[Error Handling]]
+[[Generic Types, Traits, and Lifetimes]]

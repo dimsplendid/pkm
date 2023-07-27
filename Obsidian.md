@@ -1,9 +1,12 @@
 ---
-aliases: 
-tags: make-life-fantasy obsidian markdown 
+aliases: [Obsidian (黑曜石)]
+tags: [make-life-fantasy, obsidian, markdown, todo]
 date created: Monday, April 25th 2022, 1:09:14 pm
 date modified: Monday, April 25th 2022, 1:09:14 pm
 title: Obsidian (黑曜石)
+linter-yaml-title-alias: Obsidian (黑曜石)
+date-created: Saturday, February 18th 2023, 11:01:04 pm
+date-modified: Thursday, July 27th 2023, 9:06:45 pm
 ---
 
 # Obsidian (黑曜石)
@@ -12,6 +15,19 @@ title: Obsidian (黑曜石)
 
 https://obsidian.md/
 
-## Internal link
+## Internal Link
 
 Type `[[` then type `#`, then we can select and autocomplete, but to be honest, just using new note. The philosophy is **One Topic, One Note**.
+
+## Canvas
+## Plugins to Try
+#todo
+1. [[Dataview]]
+2. [[Advanced Slides]]
+3. [[Day Planner]]
+4. [[Dice Roller]]
+5. [[Excalidraw]]
+6. [[GPT-3 Notes]]
+7. [[Kanban]]
+8. [[LanguageTool]]
+9. [[Linter]]
