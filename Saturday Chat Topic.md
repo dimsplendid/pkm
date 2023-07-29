@@ -8,11 +8,10 @@ title: Saturday Talking Topic
 
 # Saturday Talking Topic
 
-1. Pydantic 2.0 using rust
-2. 光焰 amibo
-3. 颱風
-4. 去 ikea, 高雄港
-5. 
+1. 光焰 amibo 看開相品質還是不太行，考慮買 PVC 了XD
+2. 颱風
+3. xenoblade 一週年
+4. 
 
 
 H1B
