@@ -12,7 +12,10 @@ title: Saturday Talking Topic
 2. 颱風
 3. xenoblade 3 一週年
 4. 常溫超導體
-5. 
+5. JavaScript 心得：
+	1. 標準和實作的差距(標準已是 2023, engine 實作只到 2017)
+	2. 不過近年改動較小，且有 transpiler 可以先**享受**
+	3. 學習起來成本較低。
 
 
 H1B
