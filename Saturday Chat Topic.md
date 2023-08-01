@@ -9,7 +9,7 @@ title: Saturday Talking Topic
 # Saturday Talking Topic
 
 
-
+1. 開始看幾個 python, js 的學生，typo 真的是一大錯誤。總覺得應該好好先教如何看 Error message.
 
 H1B
 
