@@ -13,3 +13,8 @@ title: PI(Polyimide)
 ## 阻值
 
 依阻值可分為高低阻，界線是 $10^{15}$，如 RB024。
+
+
+## 光配向
+
+[[yaroshchuk2012.pdf]]
