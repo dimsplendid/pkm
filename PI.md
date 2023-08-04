@@ -18,3 +18,4 @@ title: PI(Polyimide)
 ## 光配向
 
 [[yaroshchuk2012.pdf]]
+[[15421406.2016.1277314.pdf]]
