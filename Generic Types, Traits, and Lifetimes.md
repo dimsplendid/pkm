@@ -11,4 +11,23 @@ date-modified: Thursday, July 27th 2023, 11:08:36 pm
 
 
 1. Generic types won't make your program run any slower than it would with concrete types. Cause it would *expand* as compile(called monomorphization)
-2. 
+
+```rust
+use std::fmt::Display;
+
+fn longest_with_an_announcement<'a, T>(
+    x: &'a str,
+    y: &'a str,
+    ann: T,
+) -> &'a str
+where
+    T: Display,
+{
+    println!("Announcement! {}", ann);
+    if x.len() > y.len() {
+        x
+    } else {
+        y
+    }
+}
+```

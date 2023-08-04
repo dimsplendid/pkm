@@ -1,9 +1,10 @@
 ---
-aliases: 
-date created: Tuesday, June 7th 2022, 2:19:03 pm
-date modified: Wednesday, July 20th 2022, 11:16:32 pm
-tags: rust, learn 
+aliases: [Rust]
+tags: [rust, learn, todo]
 title: Rust
+date-created: Saturday, February 18th 2023, 11:01:04 pm
+date-modified: Thursday, August 3rd 2023, 11:40:06 pm
+linter-yaml-title-alias: Rust
 ---
 
 # Rust
@@ -240,5 +241,8 @@ fn main() {
 }
 ```
 
-[[Error Handling]]
-[[Generic Types, Traits, and Lifetimes]]
+#todo separate topics:
+
+2. [[Error Handling]]
+3. [[Generic Types, Traits, and Lifetimes]]
+4. [[Writing Automated Tests]]
