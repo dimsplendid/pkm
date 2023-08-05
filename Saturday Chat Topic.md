@@ -10,8 +10,12 @@ title: Saturday Talking Topic
 
 
 1. 開始看幾個 python, js 的學生，typo 真的是一大錯誤。總覺得應該好好先教如何看 Error message.
-2. Dvorak Keyboard
-3. GPT-4 code interpreter 真的猛@@
+2. 看到字都不太會打的學生正在學 DB 的資料關聯，該說不愧是 21 世紀了？
+3. Dvorak Keyboard
+4. GPT-4 code interpreter 真的猛@@
+5. 芭比
+6. 明天打算再去 ikea，順便試試眠豆
+7. Rust 也有和 Python 一樣的 doc-test, 且整合更好，可以和說明文件一致。
 
 H1B
 
