@@ -15,6 +15,7 @@ title: Saturday Talking Topic
 4. GPT-4 code interpreter 真的猛@@
 5. 芭比
 6. 明天打算再去 ikea，順便試試眠豆
+7. Rust 也有和 Python 一樣的 doc-test, 且整合更好，可以和說明文件一致。
 
 H1B
 
