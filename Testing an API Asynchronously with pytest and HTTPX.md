@@ -10,7 +10,7 @@ title: Testing an API Asynchronously with Pytest and HTTPX
 
 - [[Introduce to unit testing with pytest]]
 - [[Setting up the testing tools for FastAPI with HTTPX]]
-- [[Writting tests for REST API endpoints]]
+- [[Writing tests for REST API endpoints]]
 - [[Writing tests for WebSocket endpoints]]
 
 ## Technical Requirement
