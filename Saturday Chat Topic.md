@@ -9,13 +9,41 @@ title: Saturday Talking Topic
 # Saturday Talking Topic
 
 
-1. 開始看幾個 python, js 的學生，typo 真的是一大錯誤。總覺得應該好好先教如何看 Error message.
-2. 看到字都不太會打的學生正在學 DB 的資料關聯，該說不愧是 21 世紀了？
-3. Dvorak Keyboard
-4. GPT-4 code interpreter 真的猛@@
-5. 芭比
-6. 明天打算再去 ikea，順便試試眠豆
-7. Rust 也有和 Python 一樣的 doc-test, 且整合更好，可以和說明文件一致。
+1. Rust parallel 需要更正：
+	1. standard library 有 tread 可使用
+	```rust
+	use std::thread;
+	
+	fn main() {
+		let list = vec![1, 2, 3];
+		println!("Before defining closure: {:?}", list);
+	
+		thread::spawn(move || println!("From thread: {:?}", list))
+			.join()
+			.unwrap();
+	}
+	```
+	2. 3rd-part library 的工具(e.g. rayon)
+	```rust
+	use rayon::prelude::*;
+	
+	fn main() {
+		let mut vec = vec![2, 4, 6, 8];
+	
+		assert!(!vec.par_iter().any(|n| (*n % 2) != 0));
+		assert!(vec.par_iter().all(|n| (*n % 2) == 0));
+		assert!(!vec.par_iter().any(|n| *n > 8 ));
+		assert!(vec.par_iter().all(|n| *n <= 8 ));
+	
+		vec.push(9);
+	
+		assert!(vec.par_iter().any(|n| (*n % 2) != 0));
+		assert!(!vec.par_iter().all(|n| (*n % 2) == 0));
+		assert!(vec.par_iter().any(|n| *n > 8 ));
+		assert!(!vec.par_iter().all(|n| *n <= 8 )); 
+	}
+	
+	```
 
 H1B
 
