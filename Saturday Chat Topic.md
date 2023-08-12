@@ -46,6 +46,7 @@ title: Saturday Talking Topic
 	```
 
 2. 覺得現在還在說去中心化有點過時了，不過我還是覺的這是有希望的技術，但決對不是現在 *中心化* 的去中心化XD
+3. ChatGPT 現在可以直接加 custom instruction, 真的很方便。
 
 H1B
 
