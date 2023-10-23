@@ -1,9 +1,11 @@
 {
 	"nodes":[
 		{"type":"group","id":"c92d53586891efe7","x":-1180,"y":-368,"width":1000,"height":1488,"color":"1","label":"CV"},
-		{"id":"a0f889815b9c1c91","x":-920,"y":120,"width":400,"height":400,"type":"file","file":"CV Detailed Template.md"},
+		{"id":"a0f889815b9c1c91","type":"file","file":"CV Detailed Template.md","x":-920,"y":120,"width":400,"height":400},
 		{"type":"file","file":"Cover Letter Template.md","id":"efbeacb596614a84","x":-720,"y":-288,"width":480,"height":328},
 		{"type":"file","file":"FPT CV.md","id":"52443732096b3626","x":-1120,"y":640,"width":480,"height":398}
 	],
-	"edges":[]
+	"edges":[
+		{"id":"208863a9499d7a6e","fromNode":"a0f889815b9c1c91","fromSide":"bottom","toNode":"52443732096b3626","toSide":"top"}
+	]
 }

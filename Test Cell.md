@@ -1,6 +1,8 @@
 ---
 aliases: 
-tags: INX/test-cell, INX/rdl
+tags:
+  - INX/test-cell
+  - INX/rdl
 date created: Monday, April 25th 2022, 1:18:38 pm
 date modified: Monday, July 11th 2022, 1:24:45 pm
 title: Test Cell
