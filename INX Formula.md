@@ -19,7 +19,7 @@ $$
 \text{and}:\\
 L* &= 116 f(\frac{Y}{Y_n}) - 16 \\
 a* &= 500 f(\frac{X}{X_n}) - f(\frac{Y}{Y_n}) \\
-b* &= 116 f(\frac{Y}{Y_n}) - f(\frac{Z}{Z_n}), \\
+b* &= 200 f(\frac{Y}{Y_n}) - f(\frac{Z}{Z_n}), \\
 f(t) &= 
 \begin{cases}
 \sqrt[3]{t}&\text{, if } t > \delta^3\\
